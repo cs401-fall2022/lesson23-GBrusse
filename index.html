@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TITLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="description.">
+    <link rel="stylesheet" href="/style.css">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 75px;
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition-duration: 0.025s;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .grid-container > button {
+      padding: 25px;
+      text-align: center;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .button1 {
+      background-color: rgb(207, 74, 74);
+      color: black;
+      border: 2px solid #000000;
+      width: 100px;
+    }
+    
+    .button1:hover {
+      background-color: #a00c0c;
+      color: white;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button1:active {
+      box-shadow: 0 4px rgb(43, 42, 42);
+      transform: translateY(5px);
+    }
+
+    .button2 {
+      background-color: rgb(22, 143, 32);
+      color: black;
+      border: 2px solid #000000;
+      width: 100px;
+    }
+    
+    .button2:hover {
+      background-color: #04c714;
+      color: white;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button2:active {
+      box-shadow: 0 4px rgb(43, 42, 42);
+      transform: translateY(5px);
+    }
+
+    .button3 {
+      background-color: rgb(192, 190, 53);
+      color: black;
+      border: 2px solid #000000;
+      width: 100px
+    }
+    
+    .button3:hover {
+      background-color: #a58d02;
+      color: white;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button3:active {
+      box-shadow: 0 4px rgb(43, 42, 42);
+      transform: translateY(4px);
+    }
+
+    .button4 {
+      background-color: yellow;
+      color: black;
+      border: 2px solid #000000;
+      width: 100px;
+    }
+    
+    .button4:hover {
+      background-color: gold;
+      color: white;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button4:active {
+      box-shadow: 0 4px rgb(43, 42, 42);
+      transform: translateY(4px);
+    }
+    
+    </style>
+  </head>
+  <body>
+    <h1>TITLE</h1>
+
+<p>sub-title</p>
+<h2>secondary heading</h2>
+
+<p>This is the first block of text</p>
+
+<ul>
+  <li>list item <em>#1</em></li>
+  <li>list item <strong>#2</strong></li>
+  <li>list item <i>#3</i></li>
+  <li><small>list item #2<sup>2</sup></small></li>
+  <li>list item <b>#5</b></li>
+  <li><s>list item #6</s></li>
+</ul>
+
+<div class="center">
+  <div class="grid-container">
+    <div class="grid-item"><button class="button button1">Reject</button></div>
+    <div class="grid-item">2</div>
+    <div class="grid-item"><button class="button button2">Accept</button></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">5</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"><button class="button button3">Maybe</button></div>
+    <div class="grid-item">8</div>
+    <div class="grid-item"><button class="button button4">Favorite</button></div>
+  </div>
+</div>
+
+<h3>third heading that creates a new section after the list</h3>
+
+<p>block of text in new section</p>
+<p>new line block of text, but in the same section<br>new line of text in the new block</p>
+
+<h2>back to a secondary heading</h2>
+
+<p>text within the new h2 section</p>
+
+<blockquote>
+  <p>"this has the blockquote tag so its indented uniquely to give separation between this text, 
+    and the 'normal' text around it." <i>-quote author</i></p>
+</blockquote>
+
+<hr /> <!--this is what give the line at the bottom of the page-->
+
+<h4>Footer</h4>
+<p>footer information</p>
+  </body>
+</html>
