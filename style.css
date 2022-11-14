@@ -1,5 +1,9 @@
 body{
-  max-width:650px;
+  position: fixed;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
   margin:40px auto;
   padding:0 10px;
   font:18px/1.5 "Helvetica Neue";
@@ -37,6 +41,9 @@ button {
 .topnav {
   background-color: rgb(255, 255, 255);
   overflow: hidden;
+  position: relative;
+  bottom:0;
+  left:25%;
 }
 
 /* Style the links inside the navigation bar */
