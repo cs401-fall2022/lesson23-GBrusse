@@ -1,20 +1,30 @@
 /*
-const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database(':memory:');
+setup express server for basic routes
+then worry about grabbing data from db
+*/
+// Imports
+const fs = require("fs");
+const path = require("path");
+const http = require("http");
+const Mustache = require('mustache');
 
-db.serialize(() => {
-    db.run("CREATE TABLE lorem (info TEXT)");
+// Environment variables
+const hostname = "127.0.0.1";
+const port = 8000;
 
-    const stmt = db.prepare("INSERT INTO lorem VALUES (?)");
-    for (let i = 0; i < 10; i++) {
-        stmt.run("Ipsum " + i);
-    }
-    stmt.finalize();
+var index_template = fs.readFileSync(path.join(__dirname, "index.mustache"), 'utf8') + "";  //empty string concatenated forces conversion to string. Template is now a string and songs are sung
 
-    db.each("SELECT rowid AS id, info FROM lorem", (err, row) => {
-        console.log(row.id + ": " + row.info);
-    });
+var data = {
+  msg: "Hello, world!",
+};
+
+
+const server = http.createServer(function (req, res) {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    let rendered_request = Mustache.render(index_template, data);
+    res.end(rendered_request);
 });
 
-db.close();
-*/
+server.listen(port, hostname, function() {
+    console.log('Server running at http://${hostname}:${port}/');
+});
