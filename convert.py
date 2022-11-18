@@ -24,22 +24,22 @@ command += ");"
 
 conn.execute(command)
 
-while True:
-    line = f.readline()
-    data = line.split(",")
-    insert = "INSERT INTO hobby ("
-    for i, value in enumerate(columns):
-        insert += value
-        if i != len(columns) - 1:
-            insert += ", "
-    insert += ") VALUES ("
-    for i, value in enumerate(data):
-        if i == 0 or i == 1:
-            insert += "'" + value + "'"
-        else:
-            insert += value
-        if i != len(columns)-1:
-            insert += ", "
-    insert += ");"
-    conn.execute(insert)
-    quit()
+#while True:
+#    line = f.readline()
+#    data = line.split(",")
+#    insert = "INSERT INTO hobby ("
+#    for i, value in enumerate(columns):
+#        insert += value
+#        if i != len(columns) - 1:
+#           insert += ", "
+#    insert += ") VALUES ("
+#    for i, value in enumerate(data):
+#        if i == 0 or i == 1:
+#            insert += "'" + value + "'"
+#        else:
+#            insert += value
+#        if i != len(columns)-1:
+#            insert += ", "
+#    insert += ");"
+#    conn.execute(insert)
+#    quit()
