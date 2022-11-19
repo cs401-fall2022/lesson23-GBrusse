@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="description.">
     <link rel="stylesheet" href="/style.css">
+    <script defer src="login.mustache"></script>
   </head>
   <body>
     <div class="body-container">
@@ -23,12 +24,15 @@
         <h1>Login Page</h1>
       </div>
       <div class="content-container">
-        <p>
-        <strong>Email:</strong><br>
-        <strong>Username:</strong><br><br><br>
-        <strong>Sign up!</strong><br><br>
-        <strong>Forgot password</strong>
-        </p>
+        <main id="login-holder">
+          <div id="login-error-msg">
+            <p id="login-error">Invalid email <span id="login-error-second-line">and/or password</span></p>
+          </div>
+          <form id="login-form">
+            <input type="text" name="email" id="email-field" class="login-form-field" placeholder="Email">
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+            <input type="submit" value="Login" id="login-form-submit">
+          </form>
       </div>
       {{{footer_html}}}
     </div>
