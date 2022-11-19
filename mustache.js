@@ -109,7 +109,7 @@
      * which the closing tag for that section begins.
      *
      * Tokens for partials also contain two more elements: 1) a string value of
-     * indendation prior to that tag and 2) the index of that tag on that line -
+     * indentation prior to that tag and 2) the index of that tag on that line -
      * eg a value of 2 indicates the partial is the third tag on this line.
      */
     function parseTemplate (template, tags) {
