@@ -18,7 +18,7 @@ body {
   display: flex;
   align-self: stretch;
   justify-content: center;
-  background-color: rgba(83, 169, 255, 0.327);
+  background-color: rgba(46, 137, 228, 0.483);
 }
 
 .nav-item {
@@ -30,7 +30,7 @@ body {
 }
 
 .nav-item:hover {
-  background: linear-gradient(180deg, rgb(83, 169, 255), rgb(65, 148, 231));
+  background: linear-gradient(180deg, rgb(72, 161, 250), rgb(48, 132, 217));
 }
 
 .nav-active {
