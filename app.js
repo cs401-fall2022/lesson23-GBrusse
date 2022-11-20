@@ -22,6 +22,9 @@ var search_template = fs.readFileSync(path.join(__dirname, "templates/search.mus
 var login_template = fs.readFileSync(path.join(__dirname, "templates/login.mustache"), 'utf8') + "";
 var settings_template = fs.readFileSync(path.join(__dirname, "templates/settings.mustache"), 'utf8') + "";
 var navbar_html = fs.readFileSync(path.join(__dirname, "templates/navbar.mustache"), 'utf8') + "";
+var policies_template = fs.readFileSync(path.join(__dirname, "templates/policies.mustache"), 'utf8') + "";
+var suggest_template = fs.readFileSync(path.join(__dirname, "templates/suggest.mustache"), 'utf8') + "";
+var report_template = fs.readFileSync(path.join(__dirname, "templates/report.mustache"), 'utf8') + "";
 var footer_html = fs.readFileSync(path.join(__dirname, "templates/footer.mustache"), 'utf8') + "";
 
 var data = {
@@ -83,6 +86,31 @@ app.get("/login", function (req, res) {
   let rendered_request = Mustache.render(login_template, data);
   res.send(rendered_request);
 });
+
+app.get("/policies", function (req, res) {
+  var data = {};
+  data.navbar_html = navbar_html;
+  data.footer_html = footer_html;
+  let rendered_request = Mustache.render(policies_template, data);
+  res.send(rendered_request);
+});
+
+app.get("/suggest", function (req, res) {
+  var data = {};
+  data.navbar_html = navbar_html;
+  data.footer_html = footer_html;
+  let rendered_request = Mustache.render(suggest_template, data);
+  res.send(rendered_request);
+});
+
+app.get("/report", function (req, res) {
+  var data = {};
+  data.navbar_html = navbar_html;
+  data.footer_html = footer_html;
+  let rendered_request = Mustache.render(report_template, data);
+  res.send(rendered_request);
+});
+
 
 app.listen(port, function() {
     console.log('Server running at http://${hostname}:${port}/');

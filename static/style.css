@@ -65,10 +65,11 @@ body {
 
 .footer-container {
   display: flex;
+  flex-direction: row;
   align-self: stretch;
   justify-content: center;
   border-top: 1px solid grey;
-  padding: .5em;
+  padding: .25em;
 }
 
 @media (prefers-color-scheme: dark) {
