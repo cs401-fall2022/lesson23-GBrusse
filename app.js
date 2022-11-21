@@ -39,6 +39,8 @@ app.use(express.static("static"));
 
 app.get("/", function (req, res) {
   var data = {};
+  /*data.nav_one = " nav-active";
+  navbar_html = Mustache.render(navbar_html, nav_data);*/
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   data.hero_image1 = "https://d2r55xnwy6nx47.cloudfront.net/uploads/2050/09/Interpolation-Applications_520x292.jpg";
@@ -49,6 +51,8 @@ app.get("/", function (req, res) {
 
 app.get("/profile", function (req, res) {
   var data = {};
+  /*data.nav_two = " nav-active";
+  navbar_html = Mustache.render(navbar_html, nav_data);*/
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   let rendered_request = Mustache.render(profile_template, data);
