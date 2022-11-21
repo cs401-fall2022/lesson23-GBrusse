@@ -6,7 +6,7 @@ import sqlite3
 #get date and rename file with current date in name
 
 conn = sqlite3.connect("data.sqlite")
-f = open('hobbylist.csv')
+f = open('hobbyList.csv')
 firstLine = f.readline()
 columns = firstLine.split(",")
 

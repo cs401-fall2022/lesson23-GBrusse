@@ -1,4 +1,4 @@
-hobby,primary_category,int_social_non_social,int_social_elasticity,int_indoor_outdoor,int_local_travel,int_formal_classes_available,int_equipment_needed,int_equpiment_frequently_replaced,int_cost_after_purchase,int_recurring_cost_low,int_recurring_cost_high,int_min_start_cost,int_max_start_cost,int_urban_nature,int_commitment_level,int_min_time_per_session,int_suggested_weather
+hobby_name,primary_category,int_social_non_social,int_social_elasticity,int_indoor_outdoor,int_local_travel,int_formal_classes_available,int_equipment_needed,int_equpiment_frequently_replaced,int_cost_after_purchase,int_recurring_cost_low,int_recurring_cost_high,int_min_start_cost,int_max_start_cost,int_urban_nature,int_commitment_level,int_min_time_per_session,int_suggested_weather
 NOTES,,non_social0-1social,low0-5high,indoor0-3outdoor,local0-2travel,no0-3Yes,none0-3required,low0-5high,free0-3cost,in USD,in USD,in USD,in USD,urban0-2nature,low0-3lifestyle,in minutes,dry0-2snow/wet
 Running,Active,0,5,3,0,1,2,2,0,0,0,0,200,1,0,20,0
 5Ks,Active,1,5,3,0,1,2,2,3,10,50,10,50,1,0,30,0

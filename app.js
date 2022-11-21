@@ -23,14 +23,14 @@ let db = new sqlite3.Database('data.sqlite', (err) => {  //Remember to eventuall
   console.log('Connected to the in-memory SQlite database.');
 });
 
-let sql = 'SELECT DISTINCT hobby FROM hobby'; //select column_name FROM table_name
+let sql = 'SELECT DISTINCT hobby_name FROM hobby'; //select column_name FROM table_name
 
 db.all(sql, [], (err, rows) => {
   if (err) {
     throw err;
   }
   rows.forEach((row) => {
-    console.log(row.hobby);
+    console.log(row.hobby_name);
   });
 });
 
