@@ -39,9 +39,16 @@ body {
 }
 
 .content-container {
-  flex:1;
+  flex: 1;
   display: flex;
   flex-direction: row;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  padding: 1em;
 }
 
 .image-container {
