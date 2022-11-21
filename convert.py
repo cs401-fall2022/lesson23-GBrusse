@@ -6,6 +6,7 @@ import sqlite3
 #get date and rename file with current date in name
 
 conn = sqlite3.connect("data.sqlite")
+cur = conn.cursor()
 f = open('hobbyList.csv')
 firstLine = f.readline()
 columns = firstLine.split(",")
@@ -22,7 +23,7 @@ for i, value in enumerate(columns):
         command += ","
 command += ");"
 
-conn.execute(command)
+conn.execute(command) 
 
 while True:
     line = f.readline()
@@ -46,4 +47,5 @@ while True:
             insert += ", "
     insert += ");"
     print(insert)
-    conn.execute(insert)
+    cur.execute(insert)
+    conn.commit()
