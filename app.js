@@ -8,12 +8,20 @@ const path = require("path");
 const http = require("http");
 const Mustache = require('mustache');
 const express = require("express");
+const sqlite3 = require('sqlite3').verbose();
 
 const app = express();
 
 // Environment variables
 const hostname = "127.0.0.1";
 const port = 8000;
+
+let db = new sqlite3.Database('data.sqlite', (err) => {  //Remember to eventually close the database with db.close();
+  if (err) {
+    return console.error(err.message);
+  }
+  console.log('Connected to the in-memory SQlite database.');
+});
 
 var index_template = fs.readFileSync(path.join(__dirname, "templates/index.mustache"), 'utf8') + "";  //empty string concatenated forces conversion to string. Template is now a string and songs are sung
 var profile_template = fs.readFileSync(path.join(__dirname, "templates/profile.mustache"), 'utf8') + "";
