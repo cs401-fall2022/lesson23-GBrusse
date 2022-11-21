@@ -26,6 +26,8 @@ conn.execute(command)
 
 while True:
     line = f.readline()
+    if line == "":
+        break
     data = line.split(",")
     insert = "INSERT INTO hobby ("
     for i, value in enumerate(columns):
@@ -38,8 +40,10 @@ while True:
             insert += "'" + value + "'"
         else:
             insert += value
+            if value == "":
+                insert += "NULL"
         if i != len(columns)-1:
             insert += ", "
     insert += ");"
+    print(insert)
     conn.execute(insert)
-    quit()

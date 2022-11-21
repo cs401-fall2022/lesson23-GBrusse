@@ -1,5 +1,5 @@
 hobby,primary_category,int_social_non_social,int_social_elasticity,int_indoor_outdoor,int_local_travel,int_formal_classes_available,int_equipment_needed,int_equpiment_frequently_replaced,int_cost_after_purchase,int_recurring_cost_low,int_recurring_cost_high,int_min_start_cost,int_max_start_cost,int_urban_nature,int_commitment_level,int_min_time_per_session,int_suggested_weather
-NOTES,,non_social0-1social,low0-5high,indoor0-3outdoor,local0-2travel,no0-3,none0-3required,low0-5high,free0-3cost,in USD,in USD,in USD,in USD,urban0-2nature,low0-3lifestyle,in minutes,dry0-2snow/wet
+NOTES,,non_social0-1social,low0-5high,indoor0-3outdoor,local0-2travel,no0-3Yes,none0-3required,low0-5high,free0-3cost,in USD,in USD,in USD,in USD,urban0-2nature,low0-3lifestyle,in minutes,dry0-2snow/wet
 Running,Active,0,5,3,0,1,2,2,0,0,0,0,200,1,0,20,0
 5Ks,Active,1,5,3,0,1,2,2,3,10,50,10,50,1,0,30,0
 10Ks,Active,1,5,3,0,2,2,3,3,10,50,10,50,1,0,60,0
@@ -20,13 +20,13 @@ Baseball,Active,1,1,3,0,1,3,1,2,,,,,0,1,120,0
 Basketball,Active,1,1,3,0,1,3,1,2,,,,,0,1,60,0
 Flag Football,Active,1,1,3,0,1,3,1,2,,,,,0,1,30,0
 Soccer,Active,1,1,2,0,1,3,2,2,,,,,0,1,60,0
-Racquetball,Active,1,2,0,0,1,3,1,2,,,,,0,1,30,N/A
-Table Tennis,Active,1,2,0,0,1,3,1,2,,,,,0,1,30,N/A
-Squashball,Active,1,2,0,0,1,3,1,2,,,,,0,1,30,N/A
+Racquetball,Active,1,2,0,0,1,3,1,2,,,,,0,1,30,-1
+Table Tennis,Active,1,2,0,0,1,3,1,2,,,,,0,1,30,-1
+Squashball,Active,1,2,0,0,1,3,1,2,,,,,0,1,30,-1
 Golf,Active,1,5,3,0,3,2,2,1,,,,,0,0,180,0
-Water Polo,Active,1,1,1,0,1,3,1,2,,,,,0,1,60,N/A
-Swimming,Active,0,4,1,0,3,1,1,1,,,,,0,0,60,N/A
-Cross Fit,Active,1,4,0,0,3,2,1,2,,,,,0,0,60,N/A
+Water Polo,Active,1,1,1,0,1,3,1,2,,,,,0,1,60,-1
+Swimming,Active,0,4,1,0,3,1,1,1,,,,,0,0,60,-1
+Cross Fit,Active,1,4,0,0,3,2,1,2,,,,,0,0,60,-1
 Triathlons,Active,1,5,3,1,2,3,2,3,,,,,0,1,150,0
 Archery,Active,0,5,2,0,3,2,3,0,,,,,1,0,60,0
 Shooting,Active,0,5,3,0,3,2,4,0,,,,,1,1,60,0
@@ -34,7 +34,7 @@ Snow Shoeing,Active,0,3,3,1,3,2,2,2,,,,,2,0,240,2
 Skiing,Active,1,5,3,1,3,2,1,2,,,,,2,0,240,2
 Cross Country Skiing,Active,0,4,3,1,3,2,1,2,,,,,2,0,240,2
 Snow boarding,Active,1,5,3,1,3,2,1,2,,,,,2,0,240,2
-Ice Skating,Active,1,5,3,0,3,2,1,2,,,,,0,0,90,N/A
+Ice Skating,Active,1,5,3,0,3,2,1,2,,,,,0,0,90,-1
 Ice Climbing,Active,0,4,3,2,3,3,1,2,,,,,2,2,240,2
 Trail Running,Active,0,5,3,1,1,2,2,0,,,,,2,0,120,0
 Hiking,Active,1,5,3,1,1,2,2,0,,,,,2,0,120,0
@@ -54,91 +54,91 @@ Kite Surfing,Active,0,5,3,1,,2,1,0,,,,,1,0,,0
 Water Skiing,Active,1,1,3,1,,3,1,2,,,,,1,0,,0
 Boating,Active,1,3,3,1,,3,2,2,,,,,1,1,,0
 Paddle Boarding,Active,0,5,3,0,,2,2,0,,,,,1,0,60,0
-Break Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,N/A
-Salsa Dancing,Active,1,4,1,0,3,0,0,0,,,,,0,0,,N/A
-Ballroom Dancing,Active,1,2,1,0,3,0,0,0,,,,,0,0,,N/A
-Hip-Hop Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,N/A
-Ballet,Active,1,4,1,0,3,0,0,0,,,,,0,0,,N/A
-Tap Dancing,Active,1,5,1,0,3,2,1,0,,,,,0,0,,N/A
-River Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,N/A
-Contemporary Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,N/A
-Line Dancing,Active,1,2,1,0,3,0,0,0,,,,,0,0,,N/A
-Swing Dancing,Active,1,1,1,0,3,0,0,0,,,,,0,0,,N/A
-Belly Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,N/A
-Tango Dancing,Active,1,1,1,0,3,0,0,0,,,,,0,0,,N/A
-Jazz Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,N/A
+Break Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,-1
+Salsa Dancing,Active,1,4,1,0,3,0,0,0,,,,,0,0,,-1
+Ballroom Dancing,Active,1,2,1,0,3,0,0,0,,,,,0,0,,-1
+Hip-Hop Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,-1
+Ballet,Active,1,4,1,0,3,0,0,0,,,,,0,0,,-1
+Tap Dancing,Active,1,5,1,0,3,2,1,0,,,,,0,0,,-1
+River Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,-1
+Contemporary Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,-1
+Line Dancing,Active,1,2,1,0,3,0,0,0,,,,,0,0,,-1
+Swing Dancing,Active,1,1,1,0,3,0,0,0,,,,,0,0,,-1
+Belly Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,-1
+Tango Dancing,Active,1,1,1,0,3,0,0,0,,,,,0,0,,-1
+Jazz Dancing,Active,1,5,1,0,3,0,0,0,,,,,0,0,,-1
 Mountain Climbing,Active,0,4,3,1,3,2,3,2,,,,,2,1,,0
-Kickboxing,Active,0,5,1,0,3,1,2,1,,,,,0,0,,N/A
-Martial Arts,Active,0,5,1,0,3,0,1,1,,,,,1,0,,N/A
-MMA,Active,1,1,1,0,3,3,2,2,,,,,0,0,,N/A
+Kickboxing,Active,0,5,1,0,3,1,2,1,,,,,0,0,,-1
+Martial Arts,Active,0,5,1,0,3,0,1,1,,,,,1,0,,-1
+MMA,Active,1,1,1,0,3,3,2,2,,,,,0,0,,-1
 Volleyball,Active,1,1,2,0,1,3,2,2,,,,,0,1,,1
-Yoga,Active,1,5,1,0,3,0,0,0,,,,,1,0,,N/A
-Pilates,Active,1,5,1,0,3,0,0,0,,,,,1,0,,N/A
+Yoga,Active,1,5,1,0,3,0,0,0,,,,,1,0,,-1
+Pilates,Active,1,5,1,0,3,0,0,0,,,,,1,0,,-1
 Rugby,Active,1,1,3,0,1,3,3,2,,,,,0,1,,1
-Fencing,Active,1,1,1,0,3,2,2,2,,,,,0,1,,N/A
+Fencing,Active,1,1,1,0,3,2,2,2,,,,,0,1,,-1
 Jet Skiing,Active,1,3,3,1,1,3,3,2,,,,,1,1,,0
-Weight Lifting,Active,0,3,0,0,3,2,1,2,,,,,0,0,,N/A
-Calisthenics,Active,0,3,1,0,3,0,0,0,,,,,1,0,,N/A
+Weight Lifting,Active,0,3,0,0,3,2,1,2,,,,,0,0,,-1
+Calisthenics,Active,0,3,1,0,3,0,0,0,,,,,1,0,,-1
 Sailing,Active,1,1,3,1,3,3,2,2,,,,,1,2,,1
 Lacrosse,Active,1,1,2,0,1,3,2,2,,,,,0,1,,0
 Field Hockey,Active,1,1,2,0,1,3,2,2,,,,,0,1,,0
-Ice Hockey,Active,1,1,0,0,3,3,2,2,,,,,0,1,,N/A
+Ice Hockey,Active,1,1,0,0,3,3,2,2,,,,,0,1,,-1
 Cricket,Active,1,1,3,0,1,3,2,2,,,,,0,1,,0
 Badminton,Active,1,1,1,0,1,3,2,2,,,,,0,1,,1
-Dodgeball,Active,1,1,1,0,1,3,2,2,,,,,0,1,,N/A
-Roller Derby,Active,1,1,0,0,2,3,3,2,,,,,0,1,,N/A
+Dodgeball,Active,1,1,1,0,1,3,2,2,,,,,0,1,,-1
+Roller Derby,Active,1,1,0,0,2,3,3,2,,,,,0,1,,-1
 Spikeball,Active,1,1,2,0,0,3,1,1,,,,,0,1,,1
 Metal Detecting,Active,0,5,3,0,3,3,0,0,,,,,2,0,,1
 Diving,Active,0,3,1,0,3,3,1,3,,,,,1,0,,1
 Rodeo,Active,1,3,2,0,2,3,,3,,,,,0,3,,0
 Boomerang,Active,0,3,3,0,1,3,1,0,,,,,1,0,,0
-Wine/Drink Tasting,Food,1,2,1,0,0,0,0,3,,,,,1,0,60,N/a
-Cooking,Food,0,3,0,0,3,3,1,0,,,,,1,0,60,N/a
-Baking,Food,0,3,0,0,3,3,1,0,,,,,0,0,60,N/a
-Homebrewing,Food,0,2,0,0,3,3,,3,,,,,0,2,,N/a
-Vinification (Winemaking),Food,0,2,0,0,3,3,,3,,,,,0,2,,N/a
+Wine/Drink Tasting,Food,1,2,1,0,0,0,0,3,,,,,1,0,60,-1
+Cooking,Food,0,3,0,0,3,3,1,0,,,,,1,0,60,-1
+Baking,Food,0,3,0,0,3,3,1,0,,,,,0,0,60,-1
+Homebrewing,Food,0,2,0,0,3,3,,3,,,,,0,2,,-1
+Vinification (Winemaking),Food,0,2,0,0,3,3,,3,,,,,0,2,,-1
 BBQ,Food,1,3,3,0,3,3,5,0,,,,,1,1,,1
-Collect and Try Vintage Recipes,Food,0,2,0,0,2,3,1,0,,,,,0,0,,N/A
-Coffee,Food,0,2,1,0,1,3,3,0,,,,,0,0,30,N/A
-Tea,Food,0,2,1,0,1,3,5,0,,,,,0,0,30,N/A
-Mixology,Food,1,5,0,0,3,3,4,0,,,,,0,0,,N/A
-Foodie,Food,0,4,0,0,0,0,5,3,,,,,0,0,30,N/A
-Video Games,Misc,0,5,0,0,0,3,0,0,,,,,0,0,30,N/A
-Jigsaw Puzzles,Misc,0,2,0,0,0,3,0,0,,,,,0,0,,N/A
-Crossword Puzzles,Misc,0,1,0,0,0,3,5,0,,,,,0,0,,N/A
-Sudoku,Misc,0,1,0,0,0,3,5,0,,,,,0,0,,N/A
-Word Scrambles,Misc,0,1,0,0,0,3,5,0,,,,,0,0,,N/A
-Blogging,Misc,0,2,0,0,0,3,0,0,,,,,0,0,,N/A
-Podcasting,Misc,0,5,0,0,1,3,0,0,,,,,0,0,,N/A
+Collect and Try Vintage Recipes,Food,0,2,0,0,2,3,1,0,,,,,0,0,,-1
+Coffee,Food,0,2,1,0,1,3,3,0,,,,,0,0,30,-1
+Tea,Food,0,2,1,0,1,3,5,0,,,,,0,0,30,-1
+Mixology,Food,1,5,0,0,3,3,4,0,,,,,0,0,,-1
+Foodie,Food,0,4,0,0,0,0,5,3,,,,,0,0,30,-1
+Video Games,Misc,0,5,0,0,0,3,0,0,,,,,0,0,30,-1
+Jigsaw Puzzles,Misc,0,2,0,0,0,3,0,0,,,,,0,0,,-1
+Crossword Puzzles,Misc,0,1,0,0,0,3,5,0,,,,,0,0,,-1
+Sudoku,Misc,0,1,0,0,0,3,5,0,,,,,0,0,,-1
+Word Scrambles,Misc,0,1,0,0,0,3,5,0,,,,,0,0,,-1
+Blogging,Misc,0,2,0,0,0,3,0,0,,,,,0,0,,-1
+Podcasting,Misc,0,5,0,0,1,3,0,0,,,,,0,0,,-1
 Corn Hole,Misc,1,4,3,0,0,3,1,0,,,,,1,0,,1
 Horseshoes,Misc,1,4,3,0,0,2,0,0,,,,,1,0,,1
-Billiards,Misc,1,4,0,0,1,2,1,0,,,,,0,0,,N/A
-Darts,Misc,1,4,1,0,1,2,1,0,,,,,0,0,,N/A
-Fiction Writing,Misc,0,1,1,0,2,3,0,0,,,,,1,0,,N/A
-Writing Poetry,Misc,0,1,1,0,2,3,0,0,,,,,1,0,,N/A
-Reading Poetry,Misc,0,3,1,0,0,3,0,0,,,,,1,0,,N/A
-Book Club,Misc,1,2,1,0,0,3,4-5,0,,,,,0,0,,N/A
-Reading Fiction,Misc,0,2,1,0,0,3,0,0,,,,,1,0,,N/A
-Reading Non-fiction,Misc,0,2,1,0,0,3,0,0,,,,,1,0,,N/A
-Brain Teasers,Misc,0,2,1,0,0,3,5,0,,,,,1,0,,N/A
-Bingo,Misc,1,2,0,0,0,3,5,0,,,,,0,0,,N/A
-Poker,Misc,1,4,0,0,2,3,0,1,,,,,0,0,,N/A
-Magic,Misc,0,4,1,0,3,3,1,0,,,,,0,0,,N/A
-Magic The Gathering,Misc,1,2,0,0,1,3,2,0,,,,,0,0,,N/A
-Dungeons and Dragons,Misc,1,1,1,0,1,3,0,0,,,,,0,0,,N/A
-Board Games,Misc,1,1,0,0,0,3,0,0,,,,,0,0,,N/A
-Model Building,Misc,0,2,0,0,0,3,4,0,,,,,0,0,,N/A
-Chess,Misc,1,5,1,0,2,2,0,0,,,,,0,0,,N/A
-Acting,Misc,1,2,1,0,3,0,0,0,,,,,0,0,,N/A
-Improv,Misc,1,1,1,0,3,0,0,1,,,,,0,0,,N/A
-Genealogy,Misc,0,2,0,0,1,0,0,0,,,,,0,0,,N/A
-Ancient/Historical Games,Misc,1,2,1,0,0,3,N/A,0,,,,,1,0,,N/A
+Billiards,Misc,1,4,0,0,1,2,1,0,,,,,0,0,,-1
+Darts,Misc,1,4,1,0,1,2,1,0,,,,,0,0,,-1
+Fiction Writing,Misc,0,1,1,0,2,3,0,0,,,,,1,0,,-1
+Writing Poetry,Misc,0,1,1,0,2,3,0,0,,,,,1,0,,-1
+Reading Poetry,Misc,0,3,1,0,0,3,0,0,,,,,1,0,,-1
+Book Club,Misc,1,2,1,0,0,3,4,0,,,,,0,0,,-1
+Reading Fiction,Misc,0,2,1,0,0,3,0,0,,,,,1,0,,-1
+Reading Non-fiction,Misc,0,2,1,0,0,3,0,0,,,,,1,0,,-1
+Brain Teasers,Misc,0,2,1,0,0,3,5,0,,,,,1,0,,-1
+Bingo,Misc,1,2,0,0,0,3,5,0,,,,,0,0,,-1
+Poker,Misc,1,4,0,0,2,3,0,1,,,,,0,0,,-1
+Magic,Misc,0,4,1,0,3,3,1,0,,,,,0,0,,-1
+Magic The Gathering,Misc,1,2,0,0,1,3,2,0,,,,,0,0,,-1
+Dungeons and Dragons,Misc,1,1,1,0,1,3,0,0,,,,,0,0,,-1
+Board Games,Misc,1,1,0,0,0,3,0,0,,,,,0,0,,-1
+Model Building,Misc,0,2,0,0,0,3,4,0,,,,,0,0,,-1
+Chess,Misc,1,5,1,0,2,2,0,0,,,,,0,0,,-1
+Acting,Misc,1,2,1,0,3,0,0,0,,,,,0,0,,-1
+Improv,Misc,1,1,1,0,3,0,0,1,,,,,0,0,,-1
+Genealogy,Misc,0,2,0,0,1,0,0,0,,,,,0,0,,-1
+Ancient/Historical Games,Misc,1,2,1,0,0,3,-1,0,,,,,1,0,,-1
 Geocacheing,Misc,0,3,3,0,0,3,1,0,,,,,1,0,,1
-Bowling,Misc,1,5,0,0,3,2,0,1,,,,,0,0,,N/A
-Yo-Yo,Misc,0,3,1,0,3,3,2,0,,,,,1,0,,N/A
-Juggling,Misc,0,3,1,0,3,3,1,0,,,,,1,0,,N/A
+Bowling,Misc,1,5,0,0,3,2,0,1,,,,,0,0,,-1
+Yo-Yo,Misc,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Juggling,Misc,0,3,1,0,3,3,1,0,,,,,1,0,,-1
 Aviation,Misc,0,3,3,0,3,3,4,3,,,,,1,2,,1
-Contact Juggling,Misc,0,4,1,0,3,3,1,0,,,,,1,0,,N/A
+Contact Juggling,Misc,0,4,1,0,3,3,1,0,,,,,1,0,,-1
 Oil Painting,Art,0,4,1,0,3,3,4,0,,,,,1,0,,1
 Acrylic Painting,Art,0,4,1,0,3,3,4,0,,,,,1,0,,1
 Water Color Painting,Art,0,4,1,0,3,3,4,0,,,,,1,0,,1
@@ -150,90 +150,90 @@ Paint by Numbers,Art,0,3,1,0,0,3,4,0,,,,,1,0,,1
 Color by Numbers,Art,0,3,1,0,0,3,4,0,,,,,1,0,,1
 Spray Painting,Art,0,4,2,0,1,3,4,0,,,,,1,0,,0
 Stencil Painting,Art,0,4,1,0,1,3,4,0,,,,,1,0,,1
-Pottery,Art,0,4,0,0,3,3,4,1,,,,,1,0,,N/A
-Clay Sculpting,Art,0,4,0,0,3,3,4,1,,,,,1,0,,N/A
-Polymer Clay Sculpting,Art,0,4,0,0,3,3,4,1,,,,,1,0,,N/A
-Porcelain Sculpting,Art,0,4,0,0,3,3,4,1,,,,,1,0,,N/A
+Pottery,Art,0,4,0,0,3,3,4,1,,,,,1,0,,-1
+Clay Sculpting,Art,0,4,0,0,3,3,4,1,,,,,1,0,,-1
+Polymer Clay Sculpting,Art,0,4,0,0,3,3,4,1,,,,,1,0,,-1
+Porcelain Sculpting,Art,0,4,0,0,3,3,4,1,,,,,1,0,,-1
 Wood Carving,Art,0,3,1,0,3,3,4,1,,,,,1,1,,1
 Stone Sculpting,Art,0,3,1,0,3,3,4,1,,,,,1,1,,1
-Wood Turning,Art,0,3,0,0,3,3,4,1,,,,,1,1,,N/A
+Wood Turning,Art,0,3,0,0,3,3,4,1,,,,,1,1,,-1
 Wood Burning,Art,0,3,1,0,3,3,4,1,,,,,1,1,,1
-Wood Working,Art,0,3,0,0,3,3,4,1,,,,,1,1,,N/A
-Metal Working,Art,0,3,1,0,3,3,4,1,,,,,1,1,,N/A
-Photography,Art,0,5,1,0,3,3,0,0,,,,,1,0,,N/A
-Graphic Design,Art,0,4,1,0,3,3,0,0,,,,,0,0,,N/A
-Digital Art,Art,0,4,1,0,3,3,0,0,,,,,0,0,,N/A
-Videography,Art,1,4,1,0,3,3,0,0,,,,,1,0,,N/A
-Film Making,Art,1,4,1,0,3,3,0,0,,,,,1,0,,N/A
-Stained Glass,Art,0,3,0,0,3,3,4,0,,,,,0,1,,N/A
-Origami,Art,0,2,1,0,3,3,4,0,,,,,1,0,,N/A
-Glass Blowing,Art,1,4,0,0,3,3,4,2,,,,,0,1,,N/A
-Glass Painting,Art,0,3,1,0,3,3,4,0,,,,,1,0,,N/A
-Illustration,Art,0,3,1,0,3,3,4,0,,,,,1,0,,N/A
-Resin Molding,Art,0,3,0,0,,3,,0,,,,,0,0,,N/A
-Glass Etching,Art,0,3,1,0,,3,,0,,,,,1,0,,N/A
+Wood Working,Art,0,3,0,0,3,3,4,1,,,,,1,1,,-1
+Metal Working,Art,0,3,1,0,3,3,4,1,,,,,1,1,,-1
+Photography,Art,0,5,1,0,3,3,0,0,,,,,1,0,,-1
+Graphic Design,Art,0,4,1,0,3,3,0,0,,,,,0,0,,-1
+Digital Art,Art,0,4,1,0,3,3,0,0,,,,,0,0,,-1
+Videography,Art,1,4,1,0,3,3,0,0,,,,,1,0,,-1
+Film Making,Art,1,4,1,0,3,3,0,0,,,,,1,0,,-1
+Stained Glass,Art,0,3,0,0,3,3,4,0,,,,,0,1,,-1
+Origami,Art,0,2,1,0,3,3,4,0,,,,,1,0,,-1
+Glass Blowing,Art,1,4,0,0,3,3,4,2,,,,,0,1,,-1
+Glass Painting,Art,0,3,1,0,3,3,4,0,,,,,1,0,,-1
+Illustration,Art,0,3,1,0,3,3,4,0,,,,,1,0,,-1
+Resin Molding,Art,0,3,0,0,,3,,0,,,,,0,0,,-1
+Glass Etching,Art,0,3,1,0,,3,,0,,,,,1,0,,-1
 Concrete Molding,Art,0,3,1,0,,3,,1,,,,,0,1,,1
-Mosaicking,Art,0,3,1,0,,3,,0,,,,,1,0,,N/A
-Ice Sculpting,Art,0,3,3,0,3,3,5,0,,,,,1,1,,N/A
+Mosaicking,Art,0,3,1,0,,3,,0,,,,,1,0,,-1
+Ice Sculpting,Art,0,3,3,0,3,3,5,0,,,,,1,1,,-1
 Sand Sculpting,Art,0,3,3,0,,3,,0,,,,,1,0,,0
 Sand Carving,Art,0,3,3,0,,3,,0,,,,,1,0,,0
-Linocut Printmaking,Art,0,2,0,0,,3,,0,,,,,0,1,,N/A
-Woodcut Printmaking,Art,0,2,0,0,,3,,0,,,,,0,1,,N/A
-Rubber Stamping,Art,0,2,0,0,,3,,0,,,,,0,1,,N/A
-Kintsugi,Art,0,3,0,0,,3,4,0,,,,,1,0,,N/A
-Stand-up comedy,Art,1,2,1,0,3,0,0,0,,,,,0,0,120,N/A
-Jewelry Making,Art,0,2,0,0,3,3,4,0,,,,,0,1,,N/A
-Leaf/Flower Pressing,Crafts,0,3,0,0,1,3,,0,,,,,1,0,,N/A
-Painting pre-made Pottery,Crafts,0,2,1,0,1,3,,0,,,,,0,0,,N/A
-Figure Painting,Crafts,0,2,0,0,1,3,,0,,,,,0,0,,N/A
-Jewlery Making,Crafts,0,2,0,0,3,3,,0,,,,,0,1,,N/A
-Knitting,Crafts,0,4,0,0,3,3,4,0,,,,,0,0,,N/A
-Crochet,Crafts,0,4,0,0,3,3,4,0,,,,,0,0,,N/A
-Needle Felting,Crafts,0,2,1,0,,3,,0,,,,,0,0,,N/A
-Press Felting,Crafts,0,2,0,0,,3,,0,,,,,0,,,N/A
-Acrylic Felting,Crafts,0,2,,0,,3,,0,,,,,0,,,N/A
-Sewing,Crafts,0,2,,0,3,3,,0,,,,,0,0,,N/A
-Calligraphy,Crafts,0,2,1,0,3,3,,0,,,,,1,0,,N/A
-Candle Making,Crafts,0,5,0,0,3,3,,0,,,,,1,,,N/A
-Tie Dye,Crafts,0,3,1,0,,3,5,0,,,,,1,0,,N/A
-Scrapbooking,Crafts,0,2,0,0,,3,,0,,,,,0,0,,N/A
-Quilting,Crafts,0,5,0,0,,3,,0,,,,,0,0,,N/A
-Whittling,Crafts,0,3,1,0,,3,5,0,,,,,1,0,,N/A
-Cross Stitching,Crafts,0,2,1,0,,3,,0,,,,,1,,,N/A
-Puppetry,Crafts,0,2,1,0,,3,,0,,,,,,,,N/A
-Soap Making,Crafts,0,3,1,0,,3,5,0,,,,,,,,N/A
-Painting Shoes/Clothing,Crafts,0,3,1,0,,3,,0,,,,,1,0,,N/A
-Embroidery,Crafts,0,1,0,0,,3,,0,,,,,,,,N/A
-Silhouette Crafts,Crafts,0,2,1,0,,3,,0,,,,,,,,N/A
-Needleworking,Crafts,0,1,0,0,,3,,0,,,,,1,0,,N/A
-Map Making,Crafts,0,1,0,0,,3,,0,,,,,1,0,,N/A
-Sticker Making,Crafts,0,1,0,0,,3,,0,,,,,1,0,,N/A
-Diamond Painting,Crafts,0,1,0,0,,3,,0,,,,,0,0,,N/A
-Button Making,Crafts,0,2,1,0,,3,,0,,,,,,,,N/A
-Basket Weaving,Crafts,0,3,1,0,,3,,0,,,,,,,,N/A
-Terrazzo,Art,0,2,1,0,,3,5,0,,,,,0,0,,N/A
-Sand Art Bottling,Crafts,0,2,1,0,,3,,0,,,,,1,0,,N/A
-Leather Working,Crafts,0,2,0,0,,3,,0,,,,,1,1,,N/A
-Screen Printing,Crafts,0,2,0,0,,3,,0,,,,,0,1,,N/A
-Cosplaying,Crafts,1,5,1,0,0,3,,0,,,,,1,0+,,N/A
-Larping,Crafts,1,3,1,0,0,3,,0,,,,,1,0,,N/A
-Weaving,Crafts,0,3,1,0,,3,,0,,,,,1,0,,N/A
-Fairy Gardening,Crafts,0,3,3,0,,3,,0,,,,,0,0,,N/A
-Bonkei,Art,0,3,1,0,,3,,0,,,,,1,0,,N/A
-Saikei,Art,0,3,1,0,,3,,0,,,,,1,1,,N/A
-Diorama Making,Crafts,0,3,1,0,,3,,0,,,,,0,0,,N/A
-Card Making,Crafts,0,3,1,0,,3,,0,,,,,0,0,,N/A
-Papercrafting,Crafts,0,2,1,0,,3,,0,,,,,0,0,,N/A
-Paper Making,Crafts,0,2,0,0,,3,,0,,,,,0,1,,N/A
-Book Binding,Crafts,0,2,0,0,,3,,0,,,,,0,1,,N/A
-Paper Mache,Crafts,0,3,1,0,,3,,0,,,,,1,0,,N/A
-Terrariums,Crafts,0,3,1,0,,3,,0,,,,,0,1,,N/A
-Topiary Gardening,Crafts,0,2,3,0,,3,,0,,,,,1,1,,N/A
-Seed Art,Crafts,0,3,1,0,,3,,0,,,,,1,0,,N/A
+Linocut Printmaking,Art,0,2,0,0,,3,,0,,,,,0,1,,-1
+Woodcut Printmaking,Art,0,2,0,0,,3,,0,,,,,0,1,,-1
+Rubber Stamping,Art,0,2,0,0,,3,,0,,,,,0,1,,-1
+Kintsugi,Art,0,3,0,0,,3,4,0,,,,,1,0,,-1
+Stand-up comedy,Art,1,2,1,0,3,0,0,0,,,,,0,0,120,-1
+Jewelry Making,Art,0,2,0,0,3,3,4,0,,,,,0,1,,-1
+Leaf/Flower Pressing,Crafts,0,3,0,0,1,3,,0,,,,,1,0,,-1
+Painting pre-made Pottery,Crafts,0,2,1,0,1,3,,0,,,,,0,0,,-1
+Figure Painting,Crafts,0,2,0,0,1,3,,0,,,,,0,0,,-1
+Jewlery Making,Crafts,0,2,0,0,3,3,,0,,,,,0,1,,-1
+Knitting,Crafts,0,4,0,0,3,3,4,0,,,,,0,0,,-1
+Crochet,Crafts,0,4,0,0,3,3,4,0,,,,,0,0,,-1
+Needle Felting,Crafts,0,2,1,0,,3,,0,,,,,0,0,,-1
+Press Felting,Crafts,0,2,0,0,,3,,0,,,,,0,,,-1
+Acrylic Felting,Crafts,0,2,,0,,3,,0,,,,,0,,,-1
+Sewing,Crafts,0,2,,0,3,3,,0,,,,,0,0,,-1
+Calligraphy,Crafts,0,2,1,0,3,3,,0,,,,,1,0,,-1
+Candle Making,Crafts,0,5,0,0,3,3,,0,,,,,1,,,-1
+Tie Dye,Crafts,0,3,1,0,,3,5,0,,,,,1,0,,-1
+Scrapbooking,Crafts,0,2,0,0,,3,,0,,,,,0,0,,-1
+Quilting,Crafts,0,5,0,0,,3,,0,,,,,0,0,,-1
+Whittling,Crafts,0,3,1,0,,3,5,0,,,,,1,0,,-1
+Cross Stitching,Crafts,0,2,1,0,,3,,0,,,,,1,,,-1
+Puppetry,Crafts,0,2,1,0,,3,,0,,,,,,,,-1
+Soap Making,Crafts,0,3,1,0,,3,5,0,,,,,,,,-1
+Painting Shoes/Clothing,Crafts,0,3,1,0,,3,,0,,,,,1,0,,-1
+Embroidery,Crafts,0,1,0,0,,3,,0,,,,,,,,-1
+Silhouette Crafts,Crafts,0,2,1,0,,3,,0,,,,,,,,-1
+Needleworking,Crafts,0,1,0,0,,3,,0,,,,,1,0,,-1
+Map Making,Crafts,0,1,0,0,,3,,0,,,,,1,0,,-1
+Sticker Making,Crafts,0,1,0,0,,3,,0,,,,,1,0,,-1
+Diamond Painting,Crafts,0,1,0,0,,3,,0,,,,,0,0,,-1
+Button Making,Crafts,0,2,1,0,,3,,0,,,,,,,,-1
+Basket Weaving,Crafts,0,3,1,0,,3,,0,,,,,,,,-1
+Terrazzo,Art,0,2,1,0,,3,5,0,,,,,0,0,,-1
+Sand Art Bottling,Crafts,0,2,1,0,,3,,0,,,,,1,0,,-1
+Leather Working,Crafts,0,2,0,0,,3,,0,,,,,1,1,,-1
+Screen Printing,Crafts,0,2,0,0,,3,,0,,,,,0,1,,-1
+Cosplaying,Crafts,1,5,1,0,0,3,,0,,,,,1,0,,-1
+Larping,Crafts,1,3,1,0,0,3,,0,,,,,1,0,,-1
+Weaving,Crafts,0,3,1,0,,3,,0,,,,,1,0,,-1
+Fairy Gardening,Crafts,0,3,3,0,,3,,0,,,,,0,0,,-1
+Bonkei,Art,0,3,1,0,,3,,0,,,,,1,0,,-1
+Saikei,Art,0,3,1,0,,3,,0,,,,,1,1,,-1
+Diorama Making,Crafts,0,3,1,0,,3,,0,,,,,0,0,,-1
+Card Making,Crafts,0,3,1,0,,3,,0,,,,,0,0,,-1
+Papercrafting,Crafts,0,2,1,0,,3,,0,,,,,0,0,,-1
+Paper Making,Crafts,0,2,0,0,,3,,0,,,,,0,1,,-1
+Book Binding,Crafts,0,2,0,0,,3,,0,,,,,0,1,,-1
+Paper Mache,Crafts,0,3,1,0,,3,,0,,,,,1,0,,-1
+Terrariums,Crafts,0,3,1,0,,3,,0,,,,,0,1,,-1
+Topiary Gardening,Crafts,0,2,3,0,,3,,0,,,,,1,1,,-1
+Seed Art,Crafts,0,3,1,0,,3,,0,,,,,1,0,,-1
 Bird Watching,Nature,0,5,3,0,1,1,0,0,,,,,1,0,,1
 Tree and Plant Identifying,Nature,0,3,3,0,1,0,0,0,,,,,1,0,,1
 Rock Hunting,Nature,0,2,3,0,1,0,0,0,,,,,1,0,,1
-Rock Tumbling,Nature,0,2,1,0,1,3,1,0,,,,,1,0,,N/A
+Rock Tumbling,Nature,0,2,1,0,1,3,1,0,,,,,1,0,,-1
 Fishing,Nature,0,5,3,1,2,3,,0,,,,,1,0,,1
 Fly Fishing,Nature,0,5,3,1,3,3,2,0,,,,,1,1,,1
 Ice Fishing,Nature,0,5,3,1,2,3,,0,,,,,1,1,,1
@@ -247,184 +247,184 @@ Bouldering,Nature,1,5,1,1,3,1,3,1,,,,,1,0,,1
 Plein Air Painting,Nature,0,3,3,0,3,3,4,0,,,,,1,0,,0
 Gardening,Nature,0,5,3,0,3,3,3,0,,,,,1,0,,1
 Astronomy,Nature,0,3,3,0,3,1,0,0,,,,,1,0,,0
-Bonsai,Nature,0,2,1,0,3,3,1,0,,,,,1,0,,N/A
+Bonsai,Nature,0,2,1,0,3,3,1,0,,,,,1,0,,-1
 Pooktre,Nature,0,2,1,0,1,3,1,0,,,,,1,1,,1
-Aquascaping,Nature,0,2,1,0,1,3,,0,,,,,1,1,,N/A
+Aquascaping,Nature,0,2,1,0,1,3,,0,,,,,1,1,,-1
 Rock Gardening,Nature,0,2,3,0,1,3,,0,,,,,1,0,,1
 Zen Gardening,Nature,0,2,1,0,1,3,,0,,,,,1,0,,0
-Visiting National Parks,Nature,0,3,3,0,0,0,0,3,,,,,2,2,,N/A
-Falconry,Nature,0,2,3,0,3,3,T,3,,,,,2,3,,1
+Visiting National Parks,Nature,0,3,3,0,0,0,0,3,,,,,2,2,,-1
+Falconry,Nature,0,2,3,0,3,3,5,3,,,,,2,3,,1
 Equestrianism,Nature,1,3,3,0,3,3,,3,,,,,2,3,,1
-Bushcraft,Nature,0,3,3,1,3,3,,0,,,,,2,1,,N/A
-Hunting,Nature,0,5,3,2,3,3,3,2,,,,,2,1,,N/A
-Knot-tying,Nature,0,3,1,0,3,3,0-5,0,,,,,1,0,,N/A
-Keyboard,Music,0,3,1,0,3,3,0,0,,,,,0,0+,,N/A
-Acoustic Guitar,Music,0,3,1,0,3,3,1,0,,,,,1,0+,,N/A
-Electric Guitar,Music,0,3,1,0,3,3,1,0,,,,,0,0+,,N/A
-Classical Guitar,Music,0,3,1,0,3,3,1,0,,,,,1,0+,,N/A
-Bass Guitar,Music,0,3,1,0,3,3,1,0,,,,,0,0+,,N/A
-Drums,Music,0,3,1,0,3,3,1,0,,,,,0,0+,,N/A
-Singing,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Harmonica,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Piano,Music,0,3,1,0,3,3,0,0,,,,,0,0+,,N/A
-Violin,Music,0,3,1,0,3,3,1,0,,,,,1,0+,,N/A
-Double Bass,Music,0,3,1,0,3,3,1,0,,,,,1,0+,,N/A
-Cello,Music,0,3,1,0,3,3,1,0,,,,,1,0+,,N/A
-Harp,Music,0,3,1,0,3,3,1,0,,,,,0,0+,,N/A
-Lyre,Music,0,3,1,0,3,3,1,0,,,,,1,0+,,N/A
-Pan Flute,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Flute,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Oboe,Music,0,3,1,0,3,3,2,0,,,,,1,0+,,N/A
-Clarinet,Music,0,3,1,0,3,3,2,0,,,,,1,0+,,N/A
-Piccolo,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-English Horn,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Bass Clarinet Bassoon,Music,0,3,1,0,3,3,2,0,,,,,1,0+,,N/A
-Contrabassoon,Music,0,3,1,0,3,3,2,0,,,,,1,0+,,N/A
-Trumpet,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-French Horn,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Trombone,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Tuba,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Timpani,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Xylophone,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Triangle,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Snare Drum,Music,0,3,1,0,3,3,1,0,,,,,1,0+,,N/A
-Celesta,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Castanets,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Mbira,Music,0,3,1,0,3,3,1,0,,,,,1,0+,,N/A
-Kalimba,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Bagpipes,Music,0,3,1,0,3,3,1,0,,,,,1,0+,,N/A
-Bugle,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Tennor Saxophone,Music,0,3,1,0,3,3,2,0,,,,,1,0+,,N/A
-Alto Saxaphone,Music,0,3,1,0,3,3,2,0,,,,,1,0+,,N/A
-Banjo,Music,0,3,1,0,3,3,2,0,,,,,1,0+,,N/A
-Shamisen,Music,0,3,1,0,3,3,2,0,,,,,1,0+,,N/A
-Hurdy-gurdy,Music,0,3,1,0,3,3,2,0,,,,,1,0+,,N/A
-Cornet,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Recorder,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Ukulele,Music,0,3,1,0,3,3,2,0,,,,,1,0+,,N/A
-Bongo Drums,Music,0,3,1,0,3,3,1,0,,,,,1,0+,,N/A
-Going to Concerts,Music,0,3,1,0,0,0,N/A,0,5,300,5,300,0,0+,,N/A
-Playing Music With Friends,Music,0,3,1,0,0,3,N/A,0,,,,,1,0+,,N/A
-Covering Songs,Music,0,3,1,0,2,3,N/A,0,,,,,1,0+,,N/A
-Beatboxing,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Making Electronic Music,Music,0,3,1,0,3,3,N/A,0,,,,,0,0+,,N/A
-Making Remixes,Music,0,3,1,0,3,3,N/A,0,,,,,0,0+,,N/A
-Rapping,Music,0,3,1,0,3,3,0,0,,,,,1,0+,,N/A
-Mixing,Music,0,3,1,0,3,3,N/A,0,,,,,0,0+,,N/A
-Audiophile,Music,0,2,1,0,1,3,N/A,0,,,,,0,0+,,N/A
-Stamps,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Sports Cards,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Playing Cards,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Precious Metals,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Books,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Art,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Pens,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Buttons,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Flags,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Spoons,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Bottle Openers,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Watches,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Sports memorabillia,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Autographs,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Art Magnets,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Vinyl Records,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Knick-Knacks,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-LEGO,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Action Figures,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Sea Shells,Collecting,0,2,2,0,1,1,N/A,2,N/A,N/A,N/A,N/A,1,0-1,,N/A
-Ties,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Hats,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Shoes,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Matchbooks,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Wine,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Corks,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Bottle Caps,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Vintage Glass/Bottles,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Cookbooks,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Figurines,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-"Whiskey, Rum, Other Spirits",Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Vintage Metal Toys,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Candles,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Antiques,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Relics,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Snow Globes,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-All Things X Color,Collecting,0,2,0,0,0,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Pez Dispenser,Collecting,0,2,0,0,0,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Disneyanna,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Childhood Toys,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Favorite Movie Memorbillia,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-HollyWood/Film Memorbillia,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Tea,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Tea Cups,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Mugs,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Album Art,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Political Memorbillia,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Lunch Boxes,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Ceramics,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Historical Items,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-X Company Memorbillia,Collecting,0,2,0,0,0,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Animation Cels,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Ashtrays,Collecting,0,2,0,0,0,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Sports Balls,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Concert Tickets,Collecting,0,2,0,0,0,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Old Currency,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Foreign Currency,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Coins,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Fossils,Collecting,0,2,1,0,1,1,N/A,2,N/A,N/A,N/A,N/A,1,0-1,,N/A
-Key Chains,Collecting,0,2,0,0,0,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Comic Books,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Models,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Movies,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Patches,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Military Memorbillia,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Vintage Electronics,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Stickers,Collecting,0,2,0,0,0,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Vintage Clothing,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Video Games,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Trading Cards,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Vintage Signs,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-X Themed/Industry Items,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Knives,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Beer Steins,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Cameras,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Feathers,Collecting,0,2,2,0,1,2,N/A,2,N/A,N/A,N/A,N/A,1,0-1,,N/A
-Maps,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Crystals/Geodes,Collecting,0,2,2,0,1,1,N/A,2,N/A,N/A,N/A,N/A,1,0-1,,N/A
-Pinball Machines,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Keys,Collecting,0,2,0,0,0,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Travel Posters/Stickers,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Dirt From Your Travels,Collecting,0,2,2,0,0,3,N/A,2,N/A,N/A,N/A,N/A,1,0-1,,N/A
-Pins,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Displates,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Postcards,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Americana,Collecting,0,2,0,0,1,1,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Jewellery,Collecting,0,2,0,0,1,2,N/A,2,N/A,N/A,N/A,N/A,0,0-1,,N/A
-Microscopy,Academic,0,2,0,0,2,3,,0,,,,,0,0,,N/A
-Game Design,Academic,0,2,1,0,1,3,,0,,,,,0,0,,N/A
-Meteorology,Academic,0,2,2,0,2,3,,0,,,,,1,0,,N/A
-Coding,Academic,0,2,1,0,3,3,1,0,,,,,0,0,,N/A
-Botany,Academic,0,3,1,0,3,3,,0,,,,,1,0,,N/A
-HAM Radio,Academic,0,5,1,0,2,3,,0,,,,,0,0,,N/A
-Data Science,Academic,Noin-social,3,1,0,3,3,,0,,,,,1,0,,N/A
-Insect Collecting,Academic,0,2,2,0,1,3,,0,,,,,1,0,,N/A
-Chemistry,Academic,0,3,1,0,3,3,5,2,,,,,0,1-2,,N/A
-Robotics,Engineering,0,,1,0,3,3,,2,,,,,0,2,,N/A
+Bushcraft,Nature,0,3,3,1,3,3,,0,,,,,2,1,,-1
+Hunting,Nature,0,5,3,2,3,3,3,2,,,,,2,1,,-1
+Knot-tying,Nature,0,3,1,0,3,3,3,0,,,,,1,0,,-1
+Keyboard,Music,0,3,1,0,3,3,0,0,,,,,0,0,,-1
+Acoustic Guitar,Music,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Electric Guitar,Music,0,3,1,0,3,3,1,0,,,,,0,0,,-1
+Classical Guitar,Music,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Bass Guitar,Music,0,3,1,0,3,3,1,0,,,,,0,0,,-1
+Drums,Music,0,3,1,0,3,3,1,0,,,,,0,0,,-1
+Singing,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Harmonica,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Piano,Music,0,3,1,0,3,3,0,0,,,,,0,0,,-1
+Violin,Music,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Double Bass,Music,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Cello,Music,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Harp,Music,0,3,1,0,3,3,1,0,,,,,0,0,,-1
+Lyre,Music,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Pan Flute,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Flute,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Oboe,Music,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Clarinet,Music,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Piccolo,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+English Horn,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Bass Clarinet Bassoon,Music,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Contrabassoon,Music,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Trumpet,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+French Horn,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Trombone,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Tuba,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Timpani,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Xylophone,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Triangle,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Snare Drum,Music,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Celesta,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Castanets,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Mbira,Music,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Kalimba,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Bagpipes,Music,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Bugle,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Tennor Saxophone,Music,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Alto Saxaphone,Music,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Banjo,Music,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Shamisen,Music,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Hurdy-gurdy,Music,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Cornet,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Recorder,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Ukulele,Music,0,3,1,0,3,3,2,0,,,,,1,0,,-1
+Bongo Drums,Music,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Going to Concerts,Music,0,3,1,0,0,0,-1,0,5,300,5,300,0,0,,-1
+Playing Music With Friends,Music,0,3,1,0,0,3,-1,0,,,,,1,0,,-1
+Covering Songs,Music,0,3,1,0,2,3,-1,0,,,,,1,0,,-1
+Beatboxing,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Making Electronic Music,Music,0,3,1,0,3,3,-1,0,,,,,0,0,,-1
+Making Remixes,Music,0,3,1,0,3,3,-1,0,,,,,0,0,,-1
+Rapping,Music,0,3,1,0,3,3,0,0,,,,,1,0,,-1
+Mixing,Music,0,3,1,0,3,3,-1,0,,,,,0,0,,-1
+Audiophile,Music,0,2,1,0,1,3,-1,0,,,,,0,0,,-1
+Stamps,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Sports Cards,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Playing Cards,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Precious Metals,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Books,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Art,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Pens,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Buttons,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Flags,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Spoons,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Bottle Openers,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Watches,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Sports memorabillia,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Autographs,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Art Magnets,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Vinyl Records,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Knick-Knacks,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+LEGO,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Action Figures,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Sea Shells,Collecting,0,2,2,0,1,1,-1,2,-1,-1,-1,-1,1,0,,-1
+Ties,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Hats,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Shoes,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Matchbooks,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Wine,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Corks,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Bottle Caps,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Vintage Glass/Bottles,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Cookbooks,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Figurines,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Whiskey/Rum/Spirits,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Vintage Metal Toys,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Candles,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Antiques,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Relics,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Snow Globes,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+All Things X Color,Collecting,0,2,0,0,0,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Pez Dispenser,Collecting,0,2,0,0,0,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Disneyanna,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Childhood Toys,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Favorite Movie Memorbillia,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+HollyWood/Film Memorbillia,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Tea,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Tea Cups,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Mugs,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Album Art,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Political Memorbillia,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Lunch Boxes,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Ceramics,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Historical Items,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+X Company Memorbillia,Collecting,0,2,0,0,0,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Animation Cels,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Ashtrays,Collecting,0,2,0,0,0,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Sports Balls,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Concert Tickets,Collecting,0,2,0,0,0,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Old Currency,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Foreign Currency,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Coins,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Fossils,Collecting,0,2,1,0,1,1,-1,2,-1,-1,-1,-1,1,0,,-1
+Key Chains,Collecting,0,2,0,0,0,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Comic Books,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Models,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Movies,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Patches,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Military Memorbillia,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Vintage Electronics,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Stickers,Collecting,0,2,0,0,0,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Vintage Clothing,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Video Games,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Trading Cards,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Vintage Signs,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+X Themed/Industry Items,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Knives,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Beer Steins,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Cameras,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Feathers,Collecting,0,2,2,0,1,2,-1,2,-1,-1,-1,-1,1,0,,-1
+Maps,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Crystals/Geodes,Collecting,0,2,2,0,1,1,-1,2,-1,-1,-1,-1,1,0,,-1
+Pinball Machines,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Keys,Collecting,0,2,0,0,0,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Travel Posters/Stickers,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Dirt From Your Travels,Collecting,0,2,2,0,0,3,-1,2,-1,-1,-1,-1,1,0,,-1
+Pins,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Displates,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Postcards,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Americana,Collecting,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Jewellery,Collecting,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Microscopy,Academic,0,2,0,0,2,3,,0,,,,,0,0,,-1
+Game Design,Academic,0,2,1,0,1,3,,0,,,,,0,0,,-1
+Meteorology,Academic,0,2,2,0,2,3,,0,,,,,1,0,,-1
+Coding,Academic,0,2,1,0,3,3,1,0,,,,,0,0,,-1
+Botany,Academic,0,3,1,0,3,3,,0,,,,,1,0,,-1
+HAM Radio,Academic,0,5,1,0,2,3,,0,,,,,0,0,,-1
+Data Science,Academic,0,3,1,0,3,3,,0,,,,,1,0,,-1
+Insect Collecting,Academic,0,2,2,0,1,3,,0,,,,,1,0,,-1
+Chemistry,Academic,0,3,1,0,3,3,5,2,,,,,0,1,,-1
+Robotics,Engineering,0,,1,0,3,3,,2,,,,,0,2,,-1
 Rocketeering,Engineering,0,,2,0,3,3,5,2,,,,,0,2,,1
-Electrical Engineering,Engineering,0,,0,0,3,3,,2,,,,,0,1,,N/A
-Gadget Making,Engineering,0,,1,0,3,3,,2,,,,,0,1,,N/A
-3D Printing,Engineering,0,,0,0,3,3,5,2,,,,,0,1,,N/A
-Restoration,Engineering,0,,1,0,3,3,4,2,,,,,0,1,,N/A
-Re-Inventing Historical Inventions,Engineering,0,,1,0,1,3,,2,,,,,1,1,,N/A
-Computer Engineering,Engineering,0,,0,0,3,3,,2,,,,,0,1,,N/A
-Circuitry,Engineering,0,,0,0,3,3,,2,,,,,0,1,,N/A
-Mechanical Engineering,Engineering,0,,1,0,3,3,,2,,,,,0,1,,N/A
+Electrical Engineering,Engineering,0,,0,0,3,3,,2,,,,,0,1,,-1
+Gadget Making,Engineering,0,,1,0,3,3,,2,,,,,0,1,,-1
+3D Printing,Engineering,0,,0,0,3,3,5,2,,,,,0,1,,-1
+Restoration,Engineering,0,,1,0,3,3,4,2,,,,,0,1,,-1
+Re-Inventing Historical Inventions,Engineering,0,,1,0,1,3,,2,,,,,1,1,,-1
+Computer Engineering,Engineering,0,,0,0,3,3,,2,,,,,0,1,,-1
+Circuitry,Engineering,0,,0,0,3,3,,2,,,,,0,1,,-1
+Mechanical Engineering,Engineering,0,,1,0,3,3,,2,,,,,0,1,,-1
 FPV Drones,Engineering,0,4,3,0,3,3,,0,,,,,1,1,,0
 RC Aviation,Engineering,0,3,3,0,3,3,,0,,,,,1,1,,0
-Visit Botanical Gardens,Cultural,0,5,3,1,0,0,N/A,3,5,30,5,30,0,0,,1
-Visit Museums,Cultural,0,5,0,1,0,0,N/A,3,5,30,5,30,0,0,,N/A
-Watch Documentaries,Cultural,0,4,0,0,0,0,N/A,0,N/A,N/A,N/A,N/A,0,0,,N/A
-Create a Documentary,Cultural,0,5,1,1,3,3,N/A,2,N/A,N/A,N/A,N/A,1,0,,N/A
-Go To Art Shows,Cultural,1,4,2,1,0,0,N/A,2,N/A,N/A,N/A,N/A,0,0,,N/A
-Go To Festivals,Cultural,1,4,2,1,0,0,N/A,2,N/A,N/A,N/A,N/A,0,0,,N/A
-Learning a Language,Cultural,0,3,1,0,3,0,N/A,0,N/A,N/A,N/A,N/A,1,1,,N/A
-Watch Foreign Films,Cultural,0,3,0,0,0,1,N/A,0,N/A,N/A,N/A,N/A,0,0,,N/A
+Visit Botanical Gardens,Cultural,0,5,3,1,0,0,-1,3,5,30,5,30,0,0,,1
+Visit Museums,Cultural,0,5,0,1,0,0,-1,3,5,30,5,30,0,0,,-1
+Watch Documentaries,Cultural,0,4,0,0,0,0,-1,0,-1,-1,-1,-1,0,0,,-1
+Create a Documentary,Cultural,0,5,1,1,3,3,-1,2,-1,-1,-1,-1,1,0,,-1
+Go To Art Shows,Cultural,1,4,2,1,0,0,-1,2,-1,-1,-1,-1,0,0,,-1
+Go To Festivals,Cultural,1,4,2,1,0,0,-1,2,-1,-1,-1,-1,0,0,,-1
+Learning a Language,Cultural,0,3,1,0,3,0,-1,0,-1,-1,-1,-1,1,1,,-1
+Watch Foreign Films,Cultural,0,3,0,0,0,1,-1,0,-1,-1,-1,-1,0,0,,-1

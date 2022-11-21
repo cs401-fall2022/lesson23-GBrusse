@@ -23,6 +23,17 @@ let db = new sqlite3.Database('data.sqlite', (err) => {  //Remember to eventuall
   console.log('Connected to the in-memory SQlite database.');
 });
 
+let sql = 'SELECT DISTINCT hobby FROM hobby'; //select column_name FROM table_name
+
+db.all(sql, [], (err, rows) => {
+  if (err) {
+    throw err;
+  }
+  rows.forEach((row) => {
+    console.log(row.hobby);
+  });
+});
+
 var index_template = fs.readFileSync(path.join(__dirname, "templates/index.mustache"), 'utf8') + "";  //empty string concatenated forces conversion to string. Template is now a string and songs are sung
 var profile_template = fs.readFileSync(path.join(__dirname, "templates/profile.mustache"), 'utf8') + "";
 var help_template = fs.readFileSync(path.join(__dirname, "templates/help.mustache"), 'utf8') + "";
