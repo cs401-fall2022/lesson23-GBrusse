@@ -57,13 +57,31 @@ var data = {
 
 app.use(express.static("static"));
 
-app.post('/api/', (req, res) => {
+/*
+SELECT hobby_name FROM hobby
+LIMIT 1;                            <- Selects just one hobby_name from hobby
+
+SELECT hobby_name FROM hobby
+WHERE int_social_non_social = 0;    <- that selects all non social hobbies
+
+SELECT hobby_name FROM hobby
+WHERE int_social_non_social = 1
+AND int_indoor_outdoor = 3;         <- selects all social hobbies that are ALSO outdoor hobbies
+})
+
+SELECT hobby_name FROM hobby
+WHERE int_social_non_social = 0
+OR int_indoor_outdoor = 3;          <- selects all hobbies that are non-social OR are outdoor (all non-social hobbies plus all outdoor social hobbies)
+
+
+app.post('http://localhost:8000/api/', (req, res) => {
   const accepted = req.body.accepted
   // do the thing
-  db.all(`select * from hobby order by hobby_name`, [], (err, rows) => {
+  db.all(`SELECT hobby_name FROM hobby`, [], (err, rows) => {
     res.json(product);
   });
 })
+*/
 
 app.get("/", function (req, res) {
   var data = {};
