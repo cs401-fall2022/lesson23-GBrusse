@@ -9,6 +9,7 @@ const http = require("http");
 const Mustache = require('mustache');
 const express = require("express");
 const sqlite3 = require('sqlite3').verbose();
+const mysql = require('mysql');
 
 const app = express();
 
@@ -55,6 +56,14 @@ var data = {
 };
 
 app.use(express.static("static"));
+
+app.post('/api/', (req, res) => {
+  const accepted = req.body.accepted
+  // do the thing
+  db.all(`select * from hobby order by hobby_name`, [], (err, rows) => {
+    res.json(product);
+  });
+})
 
 app.get("/", function (req, res) {
   var data = {};
