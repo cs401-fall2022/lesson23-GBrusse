@@ -147,7 +147,7 @@ input[type=submit]:hover {
 }
 
 .reject {
-  background-color: rgb(255, 50, 50);
+  background-color: rgb(255, 73, 73);
   color: black;
   border: 2px solid #000000;
   box-shadow: 0 5px rgb(43, 42, 42);
