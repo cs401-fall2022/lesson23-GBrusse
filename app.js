@@ -9,7 +9,6 @@ const http = require("http");
 const Mustache = require('mustache');
 const express = require("express");
 const sqlite3 = require('sqlite3').verbose();
-const mysql = require('mysql');
 
 const app = express();
 
