@@ -122,39 +122,60 @@ body {
   border-radius: 10px;
 }
 
+input[type=submit] {
+  border: none;
+  background-color: transparent;
+  color: none;
+  padding: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition-duration: 0.025s;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: .5em;
+}
+
+input[type=submit]:hover {
+  color: #cfcece;
+}
+
 .hobby-title {
   text-align: center;
   color: rgb(0, 0, 0);
 }
 
-.button1 {
+.reject {
   background-color: rgb(216, 63, 63);
   color: black;
   border: 2px solid #000000;
   box-shadow: 0 5px rgb(43, 42, 42);
+  border-radius: 8px;
 }
 
-.button1:hover {
+.reject:hover {
   background-color: red;
   color: white;
 }
-.button1:active {
+.reject:active {
   transform: translateY(5px);
   box-shadow: none;
 }
 
-.button2 {
+.accept {
   background-color: rgb(58, 179, 58);
   color: black;
   border: 2px solid #000000;
   box-shadow: 0 5px rgb(43, 42, 42);
+  border-radius: 8px;
 }
 
-.button2:hover {
+.accept:hover {
   background-color: green;
   color: white;
 }
-.button2:active {
+.accept:active {
   transform: translateY(5px);
   box-shadow: none;
 }
