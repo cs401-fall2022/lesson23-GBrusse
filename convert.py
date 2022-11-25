@@ -15,7 +15,7 @@ f.readline()    #This is what skips the second row, and moves the pointer to the
 
 command = "CREATE TABLE hobby ("
 for i, value in enumerate(columns):
-    if i == 0 or i == 1:
+    if i == 0 or i == 1 or i ==2:
         command += value + " varchar(255)"
     else:
         command += value + " int"
@@ -37,7 +37,7 @@ while True:
             insert += ", "
     insert += ") VALUES ("
     for i, value in enumerate(data):
-        if i == 0 or i == 1:
+        if i == 0 or i == 1 or i ==2:
             insert += "'" + value + "'"
         else:
             insert += value
