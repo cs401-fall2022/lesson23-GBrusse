@@ -76,9 +76,10 @@ OR int_indoor_outdoor = 3;          <- selects all hobbies that are non-social O
 
 app.post('http://localhost:8000/api/', (req, res) => {
   const accepted = req.body.accepted
-  // do the thing
-  db.all(`SELECT hobby_name FROM hobby`, [], (err, rows) => {
-    res.json(product);
+  //mark hobby as liked or disliked
+  db.all(`SELECT hobby_name FROM hobby LIMIT 1`, [], (err, rows) => {
+    //refresh the page and display new hobby information
+    res.json(index_template);
   });
 })
 */
