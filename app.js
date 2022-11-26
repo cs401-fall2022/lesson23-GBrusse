@@ -20,12 +20,12 @@ let db = new sqlite3.Database('data.sqlite', (err) => {  //Remember to eventuall
   if (err) {
     return console.error(err.message);
   }
-  console.log('Connected to the in-memory SQlite database.');
+  console.log('Connected to the SQlite database.');
 });
 
 let sql = 'SELECT DISTINCT hobby_name FROM hobby'; //select column_name FROM table_name
 
-db.all(sql, [], (err, rows) => {
+db.all('SELECT DISTINCT hobby_name FROM hobby', [], (err, rows) => {
   if (err) {
     throw err;
   }
@@ -34,19 +34,19 @@ db.all(sql, [], (err, rows) => {
   });
 });
 
-var index_template = fs.readFileSync(path.join(__dirname, "templates/index.mustache"), 'utf8') + "";  //empty string concatenated forces conversion to string. Template is now a string and songs are sung
-var profile_template = fs.readFileSync(path.join(__dirname, "templates/profile.mustache"), 'utf8') + "";
-var help_template = fs.readFileSync(path.join(__dirname, "templates/help.mustache"), 'utf8') + "";
-var search_template = fs.readFileSync(path.join(__dirname, "templates/search.mustache"), 'utf8') + "";
-var login_template = fs.readFileSync(path.join(__dirname, "templates/login.mustache"), 'utf8') + "";
-var settings_template = fs.readFileSync(path.join(__dirname, "templates/settings.mustache"), 'utf8') + "";
-var navbar_html = fs.readFileSync(path.join(__dirname, "templates/navbar.mustache"), 'utf8') + "";
-var policies_template = fs.readFileSync(path.join(__dirname, "templates/policies.mustache"), 'utf8') + "";
-var suggest_template = fs.readFileSync(path.join(__dirname, "templates/suggest.mustache"), 'utf8') + "";
-var report_template = fs.readFileSync(path.join(__dirname, "templates/report.mustache"), 'utf8') + "";
-var footer_html = fs.readFileSync(path.join(__dirname, "templates/footer.mustache"), 'utf8') + "";
+const index_template = fs.readFileSync(path.join(__dirname, "templates/index.mustache"), 'utf8') + "";  //empty string concatenated forces conversion to string. Template is now a string and songs are sung
+const profile_template = fs.readFileSync(path.join(__dirname, "templates/profile.mustache"), 'utf8') + "";
+const help_template = fs.readFileSync(path.join(__dirname, "templates/help.mustache"), 'utf8') + "";
+const search_template = fs.readFileSync(path.join(__dirname, "templates/search.mustache"), 'utf8') + "";
+const login_template = fs.readFileSync(path.join(__dirname, "templates/login.mustache"), 'utf8') + "";
+const settings_template = fs.readFileSync(path.join(__dirname, "templates/settings.mustache"), 'utf8') + "";
+const navbar_html = fs.readFileSync(path.join(__dirname, "templates/navbar.mustache"), 'utf8') + "";
+const policies_template = fs.readFileSync(path.join(__dirname, "templates/policies.mustache"), 'utf8') + "";
+const suggest_template = fs.readFileSync(path.join(__dirname, "templates/suggest.mustache"), 'utf8') + "";
+const report_template = fs.readFileSync(path.join(__dirname, "templates/report.mustache"), 'utf8') + "";
+const footer_html = fs.readFileSync(path.join(__dirname, "templates/footer.mustache"), 'utf8') + "";
 
-var data = {
+let data = {
   hero_image1: "https://d2r55xnwy6nx47.cloudfront.net/uploads/2050/09/Interpolation-Applications_520x292.jpg",
   hero_image2: "https://images2.content-hci.com/commimg/myhotcourses/blog/post/myhc_89683.jpg",
   hobby_title: "Programming",
@@ -56,6 +56,7 @@ var data = {
 };
 
 app.use(express.static("static"));
+app.use(express.urlencoded());
 
 /*
 SELECT hobby_name FROM hobby
@@ -84,24 +85,49 @@ app.post('http://localhost:8000/api/', (req, res) => {
 })
 */
 
-app.get("/", function (req, res) {
-  var data = {};
-  /*data.nav_one = " nav-active";
-  navbar_html = Mustache.render(navbar_html, nav_data);*/
+app.get("/", (req, res) => {
+  let data = {};
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   data.hero_image1 = "https://d2r55xnwy6nx47.cloudfront.net/uploads/2050/09/Interpolation-Applications_520x292.jpg";
   data.hero_image2 = "https://images2.content-hci.com/commimg/myhotcourses/blog/post/myhc_89683.jpg";
   data.hobby_name = "Programming";
   data.hobby_description = "Computer programming is the process of performing a particular computation, usually by designing and building an executable computer program. Programming involves tasks such as analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms. Video games, apps, websites, or anything else done with a computer or phone requires some one or even teams of people to design and build them through programming. If you can program, you could build your own website, application, video game, or anything else you can think of!";
-  let rendered_request = Mustache.render(index_template, data);
-  res.send(rendered_request);
+  
+  let rendered_response = Mustache.render(index_template, data);
+  res.send(rendered_response);
+});
+
+app.post("/", (req, res) => {
+  let action = req.body.action;
+  let hobby_name = req.body.hobby_name;
+
+  if (action == "like") {
+    //flag hobby as liked
+  } else {
+    //flag hobby as disliked
+  }
+
+  let template_data = {};
+  
+  db.all('SELECT DISTINCT hobby_name, primary_category FROM hobby ORDER BY Random() LIMIT 1', [], (err, rows) => {
+    if (err) {
+      console.log("Database error");
+      throw err;
+    }
+
+    template_data.hobby_name = rows[0].hobby_name;
+    template_data.hobby_id = rows[0].hobby_id;
+    template_data.primary_category = rows[0].primary_category;
+
+    console.log(rows);
+
+    res.send(Mustache.render(index_template, template_data));
+  });
 });
 
 app.get("/profile", function (req, res) {
-  var data = {};
-  /*data.nav_two = " nav-active";
-  navbar_html = Mustache.render(navbar_html, nav_data);*/
+  let data = {};
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   let rendered_request = Mustache.render(profile_template, data);
@@ -109,7 +135,7 @@ app.get("/profile", function (req, res) {
 });
 
 app.get("/settings", function (req, res) {
-  var data = {};
+  let data = {};
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   let rendered_request = Mustache.render(settings_template, data);
@@ -117,7 +143,7 @@ app.get("/settings", function (req, res) {
 });
 
 app.get("/help", function (req, res) {
-  var data = {};
+  let data = {};
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   let rendered_request = Mustache.render(help_template, data);
@@ -125,7 +151,7 @@ app.get("/help", function (req, res) {
 });
 
 app.get("/search", function (req, res) {
-  var data = {};
+  let data = {};
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   let rendered_request = Mustache.render(search_template, data);
@@ -133,7 +159,7 @@ app.get("/search", function (req, res) {
 });
 
 app.get("/login", function (req, res) {
-  var data = {};
+  let data = {};
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   let rendered_request = Mustache.render(login_template, data);
@@ -141,7 +167,7 @@ app.get("/login", function (req, res) {
 });
 
 app.get("/policies", function (req, res) {
-  var data = {};
+  let data = {};
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   let rendered_request = Mustache.render(policies_template, data);
@@ -149,7 +175,7 @@ app.get("/policies", function (req, res) {
 });
 
 app.get("/suggest", function (req, res) {
-  var data = {};
+  let data = {};
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   let rendered_request = Mustache.render(suggest_template, data);
@@ -157,7 +183,7 @@ app.get("/suggest", function (req, res) {
 });
 
 app.get("/report", function (req, res) {
-  var data = {};
+  let data = {};
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
   let rendered_request = Mustache.render(report_template, data);

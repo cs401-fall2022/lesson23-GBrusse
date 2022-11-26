@@ -23,8 +23,8 @@
         <div class="button-container">
           <div class="reject">
             <form action="http://localhost:8000" method="POST">
-              <input type="hidden" name="action" value="reject">
-              <input type="hidden" name="hobby_name" value="{{current_hobby}}">
+              <input type="hidden" name="action" value="dislike">
+              <input type="hidden" name="hobby_id" value="{{current_hobby}}">
               <input class="accept-regect-btn" type="submit" value="Dislike">
             </form>
           </div>
@@ -33,13 +33,14 @@
           <img class="hero-image" src="{{hero_image1}}" alt="{{hobby_picture1}}">
           <img class="hero-image" src="{{hero_image2}}" alt="{{hobby_picture2}}">
           <h2 class="hobby_name">{{hobby_name}}</h2>
+          <h4 class="primary_category">{{primary_category}}</h4>
           <p class="hobby_description">{{hobby_description}}</p>
         </div>
         <div class="button-container">
           <div class="accept">
             <form action="http://localhost:8000" method="POST">
-              <input type="hidden" name="action" value="accept">
-              <input type="hidden" name="hobby_name" value="{{current_hobby}}">
+              <input type="hidden" name="action" value="like">
+              <input type="hidden" name="hobby_id" value="{{current_hobby}}">
               <input class="accept-regect-btn" type="submit" value="  Like  ">
             </form>
           </div>
