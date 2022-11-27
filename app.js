@@ -52,7 +52,7 @@ let data = {
   hobby_title: "Programming",
   hobby_picture1: "Programming",
   hobby_picture2: "Programming",
-  hobby_description: "hobby_description"
+  description: "description"
 };
 
 app.use(express.static("static"));
@@ -92,7 +92,7 @@ app.get("/", (req, res) => {
   data.hero_image1 = "https://d2r55xnwy6nx47.cloudfront.net/uploads/2050/09/Interpolation-Applications_520x292.jpg";
   data.hero_image2 = "https://images2.content-hci.com/commimg/myhotcourses/blog/post/myhc_89683.jpg";
   data.hobby_name = "Programming";
-  data.hobby_description = "Computer programming is the process of performing a particular computation, usually by designing and building an executable computer program. Programming involves tasks such as analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms. Video games, apps, websites, or anything else done with a computer or phone requires some one or even teams of people to design and build them through programming. If you can program, you could build your own website, application, video game, or anything else you can think of!";
+  data.description = "Computer programming is the process of performing a particular computation, usually by designing and building an executable computer program. Programming involves tasks such as analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms. Video games, apps, websites, or anything else done with a computer or phone requires some one or even teams of people to design and build them through programming. If you can program, you could build your own website, application, video game, or anything else you can think of!";
   
   let rendered_response = Mustache.render(index_template, data);
   res.send(rendered_response);
@@ -110,7 +110,7 @@ app.post("/", (req, res) => {
 
   let template_data = {};
   
-  db.all('SELECT DISTINCT hobby_name, primary_category FROM hobby ORDER BY Random() LIMIT 1', [], (err, rows) => {
+  db.all('SELECT DISTINCT hobby_name, primary_category, description FROM hobby ORDER BY Random() LIMIT 1', [], (err, rows) => {
     if (err) {
       console.log("Database error");
       throw err;
@@ -119,6 +119,7 @@ app.post("/", (req, res) => {
     template_data.hobby_name = rows[0].hobby_name;
     template_data.hobby_id = rows[0].hobby_id;
     template_data.primary_category = rows[0].primary_category;
+    template_data.description = rows[0].description;
 
     console.log(rows);
 
