@@ -11,7 +11,7 @@ Long boarding,Active,description,8,1,4,3,0,1,3,1,0,0,0,35,600,0,0,30,0
 Skateboarding,Active,description,9,1,5,3,0,2,3,1,0,0,0,35,500,0,0,45,0
 Roller Skating,Active,description,10,1,5,3,0,1,3,1,0,0,0,,,0,0,45,0
 Roller Blading,Active,description,11,1,4,3,0,1,3,1,0,0,0,,,0,0,30,0
-Parkour,Active,description,12,1,5,3,0,3,0,2,1,,,0,200,1,0,30,0
+Parkour,Active,Push yourself mentally and physically to traverse the urban enviroment in effiecent or creative ways,12,1,5,3,0,3,0,2,1,,,0,200,1,0,30,0
 Tennis,Active,description,13,1,3,3,0,3,3,2,0,,,,,0,1,60,0
 Disc Golf,Active,description,14,1,5,3,0,2,3,1,0,,,,,1,0,60,0
 Ultimate Frisbee,Active,description,15,1,1,3,0,3,3,1,2,,,,,0,1,40,0
@@ -45,9 +45,9 @@ Bunjee jumping,Active,description,42,1,1,3,1,3,2,1,3,,,,,1,1,120,0
 Sky Diving,Active,description,43,1,1,3,0,3,2,2,3,,,,,0,1,180,0
 Dirt Biking,Active,description,44,1,5,3,0,,3,1,0,,,,,2,1,120,0
 BMX,Active,description,45,1,5,3,0,,3,1,0,,,,,0,0,60,0
-Jump Rope,Active,description,46,0,4,2,0,,3,2,0,,,,,1,0,30,1
-Autocross,Active,description,47,1,3,3,0,,3,1,3,,,,,0,0,120,0
-Rallycross,Active,description,48,1,3,3,1,,3,2,3,,,,,0,2,300,1
+Jump Rope,Active,Jumping over a hand held rope that you spin at different speeds and in different patterns for cardio or for fun,46,0,4,2,0,,3,2,0,,,,,1,0,30,1
+Autocross,Active,Race your car around a makeshift circuit against the clock and try to beat your time every life,47,1,3,3,0,,3,1,3,,,,,0,0,120,0
+Rallycross,Active,Race your car around a circuit made up of both paved raceway sections and dirt rally sections against other racers,48,1,3,3,1,,3,2,3,,,,,0,2,300,1
 Go-Karting,Active,description,49,1,3,1,0,,2,1,2,,,,,0,1,120,0
 Drag Racing,Active,description,50,1,3,3,1,,3,2,3,,,,,0,1,300,0
 Kite Surfing,Active,description,51,0,5,3,1,,2,1,0,,,,,1,0,,0
@@ -78,7 +78,7 @@ Rugby,Active,description,75,1,1,3,0,1,3,3,2,,,,,0,1,,1
 Fencing,Active,description,76,1,1,1,0,3,2,2,2,,,,,0,1,,-1
 Jet Skiing,Active,description,77,1,3,3,1,1,3,3,2,,,,,1,1,,0
 Weight Lifting,Active,description,78,0,3,0,0,3,2,1,2,,,,,0,0,,-1
-Calisthenics,Active,description,79,0,3,1,0,3,0,0,0,,,,,1,0,,-1
+Calisthenics,Active,Use just your body weight for different exercises to build muscle mass and increase mobility,79,0,3,1,0,3,0,0,0,,,,,1,0,,-1
 Sailing,Active,description,80,1,1,3,1,3,3,2,2,,,,,1,2,,1
 Lacrosse,Active,description,81,1,1,2,0,1,3,2,2,,,,,0,1,,0
 Field Hockey,Active,description,82,1,1,2,0,1,3,2,2,,,,,0,1,,0
@@ -133,12 +133,12 @@ Acting,Misc,description,130,1,2,1,0,3,0,0,0,,,,,0,0,,-1
 Improv,Misc,description,131,1,1,1,0,3,0,0,1,,,,,0,0,,-1
 Genealogy,Misc,description,132,0,2,0,0,1,0,0,0,,,,,0,0,,-1
 Ancient/Historical Games,Misc,description,133,1,2,1,0,0,3,-1,0,,,,,1,0,,-1
-Geocacheing,Misc,description,134,0,3,3,0,0,3,1,0,,,,,1,0,,1
+Geocacheing,Misc,Find trinkets around your city or out in the wilderness placed by other people and also hide your own! Leave clues or coordinates online for anyone to use and join the hunt!,134,0,3,3,0,0,3,1,0,,,,,1,0,,1
 Bowling,Misc,description,135,1,5,0,0,3,2,0,1,,,,,0,0,,-1
 Yo-Yo,Misc,description,136,0,3,1,0,3,3,2,0,,,,,1,0,,-1
-Juggling,Misc,description,137,0,3,1,0,3,3,1,0,,,,,1,0,,-1
+Juggling,Misc,Work on your hand-eye coordination by repeatedly tossing various objects into the air in different patterns and then catching them,137,0,3,1,0,3,3,1,0,,,,,1,0,,-1
 Aviation,Misc,description,138,0,3,3,0,3,3,4,3,,,,,1,2,,1
-Contact Juggling,Misc,description,139,0,4,1,0,3,3,1,0,,,,,1,0,,-1
+Contact Juggling,Misc,Instead of throwing the objects into the air to juggle. You instead roll or balance the objects on your body and each of the objects themselves.,139,0,4,1,0,3,3,1,0,,,,,1,0,,-1
 Oil Painting,Art,description,140,0,4,1,0,3,3,4,0,,,,,1,0,,1
 Acrylic Painting,Art,description,141,0,4,1,0,3,3,4,0,,,,,1,0,,1
 Water Color Painting,Art,description,142,0,4,1,0,3,3,4,0,,,,,1,0,,1
@@ -160,7 +160,7 @@ Wood Turning,Art,description,157,0,3,0,0,3,3,4,1,,,,,1,1,,-1
 Wood Burning,Art,description,158,0,3,1,0,3,3,4,1,,,,,1,1,,1
 Wood Working,Art,description,159,0,3,0,0,3,3,4,1,,,,,1,1,,-1
 Metal Working,Art,description,160,0,3,1,0,3,3,4,1,,,,,1,1,,-1
-Photography,Art,description,161,0,5,1,0,3,3,0,0,,,,,1,0,,-1
+Photography,Art,Capture urban or natural environments and moments with your camera. Tell the story of different people or animals or even whole cities through pictures.,161,0,5,1,0,3,3,0,0,,,,,1,0,,-1
 Graphic Design,Art,description,162,0,4,1,0,3,3,0,0,,,,,0,0,,-1
 Digital Art,Art,description,163,0,4,1,0,3,3,0,0,,,,,0,0,,-1
 Videography,Art,description,164,1,4,1,0,3,3,0,0,,,,,1,0,,-1
@@ -181,7 +181,7 @@ Linocut Printmaking,Art,description,178,0,2,0,0,,3,,0,,,,,0,1,,-1
 Woodcut Printmaking,Art,description,179,0,2,0,0,,3,,0,,,,,0,1,,-1
 Rubber Stamping,Art,description,180,0,2,0,0,,3,,0,,,,,0,1,,-1
 Kintsugi,Art,description,181,0,3,0,0,,3,4,0,,,,,1,0,,-1
-Stand-up comedy,Art,description,182,1,2,1,0,3,0,0,0,,,,,0,0,120,-1
+Stand-up comedy,Art,Push your creativity and humor to write a short set to make people laugh! Take that set and tell it to friends or even an open mike night at a local bar.,182,1,2,1,0,3,0,0,0,,,,,0,0,120,-1
 Jewelry Making,Art,description,183,0,2,0,0,3,3,4,0,,,,,0,1,,-1
 Leaf/Flower Pressing,Crafts,description,184,0,3,0,0,1,3,,0,,,,,1,0,,-1
 Painting pre-made Pottery,Crafts,description,185,0,2,1,0,1,3,,0,,,,,0,0,,-1
@@ -193,10 +193,10 @@ Needle Felting,Crafts,description,190,0,2,1,0,,3,,0,,,,,0,0,,-1
 Press Felting,Crafts,description,191,0,2,0,0,,3,,0,,,,,0,,,-1
 Acrylic Felting,Crafts,description,192,0,2,,0,,3,,0,,,,,0,,,-1
 Sewing,Crafts,description,193,0,2,,0,3,3,,0,,,,,0,0,,-1
-Calligraphy,Crafts,description,194,0,2,1,0,3,3,,0,,,,,1,0,,-1
+Calligraphy,Crafts,Turn hand writing into art. Write beautiful cards for friends and family. Or write chalk and window advertisments.,194,0,2,1,0,3,3,,0,,,,,1,0,,-1
 Candle Making,Crafts,description,195,0,5,0,0,3,3,,0,,,,,1,,,-1
 Tie Dye,Crafts,description,196,0,3,1,0,,3,5,0,,,,,1,0,,-1
-Scrapbooking,Crafts,description,197,0,2,0,0,,3,,0,,,,,0,0,,-1
+Scrapbooking,Crafts,Turn memories and pictures or anything else you enjoy that can fit on a page into a nice presentable book to share with others or just yourself!,197,0,2,0,0,,3,,0,,,,,0,0,,-1
 Quilting,Crafts,description,198,0,5,0,0,,3,,0,,,,,0,0,,-1
 Whittling,Crafts,description,199,0,3,1,0,,3,5,0,,,,,1,0,,-1
 Cross Stitching,Crafts,description,200,0,2,1,0,,3,,0,,,,,1,,,-1
@@ -206,16 +206,16 @@ Painting Shoes/Clothing,Crafts,description,203,0,3,1,0,,3,,0,,,,,1,0,,-1
 Embroidery,Crafts,description,204,0,1,0,0,,3,,0,,,,,,,,-1
 Silhouette Crafts,Crafts,description,205,0,2,1,0,,3,,0,,,,,,,,-1
 Needleworking,Crafts,description,206,0,1,0,0,,3,,0,,,,,1,0,,-1
-Map Making,Crafts,description,207,0,1,0,0,,3,,0,,,,,1,0,,-1
+Map Making,Crafts,Learn how to accuratley represent our world in a cool piece of art! Or even create your own world to showcase in fun and creative ways!,207,0,1,0,0,,3,,0,,,,,1,0,,-1
 Sticker Making,Crafts,description,208,0,1,0,0,,3,,0,,,,,1,0,,-1
 Diamond Painting,Crafts,description,209,0,1,0,0,,3,,0,,,,,0,0,,-1
 Button Making,Crafts,description,210,0,2,1,0,,3,,0,,,,,,,,-1
 Basket Weaving,Crafts,description,211,0,3,1,0,,3,,0,,,,,,,,-1
 Terrazzo,Art,description,212,0,2,1,0,,3,5,0,,,,,0,0,,-1
 Sand Art Bottling,Crafts,description,213,0,2,1,0,,3,,0,,,,,1,0,,-1
-Leather Working,Crafts,description,214,0,2,0,0,,3,,0,,,,,1,1,,-1
+Leather Working,Crafts,Learn how to make bags or wallets or anything else you can think of out of leather. This crafting skill has a long history of creating much needed tools for survival to showcasing wealth on one off and novel creations,214,0,2,0,0,,3,,0,,,,,1,1,,-1
 Screen Printing,Crafts,description,215,0,2,0,0,,3,,0,,,,,0,1,,-1
-Cosplaying,Crafts,description,216,1,5,1,0,0,3,,0,,,,,1,0,,-1
+Cosplaying,Crafts,Combine many skills to create a costume of your favorite character or buy an already made one! Insert yourself into your favorite stories and dress the part! Many conventions and parties center around cosplaying as different characters and range from just a Tshirt all the way to extravagant complex costumes,216,1,5,1,0,0,3,,0,,,,,1,0,,-1
 Larping,Crafts,description,217,1,3,1,0,0,3,,0,,,,,1,0,,-1
 Weaving,Crafts,description,218,0,3,1,0,,3,,0,,,,,1,0,,-1
 Fairy Gardening,Crafts,description,219,0,3,3,0,,3,,0,,,,,0,0,,-1
@@ -230,8 +230,8 @@ Paper Mache,Crafts,description,227,0,3,1,0,,3,,0,,,,,1,0,,-1
 Terrariums,Crafts,description,228,0,3,1,0,,3,,0,,,,,0,1,,-1
 Topiary Gardening,Crafts,description,229,0,2,3,0,,3,,0,,,,,1,1,,-1
 Seed Art,Crafts,description,230,0,3,1,0,,3,,0,,,,,1,0,,-1
-Bird Watching,Nature,description,231,0,5,3,0,1,1,0,0,,,,,1,0,,1
-Tree and Plant Identifying,Nature,description,232,0,3,3,0,1,0,0,0,,,,,1,0,,1
+Bird Watching,Nature,Get out in nature and admire it! Learn about local wildlife and how to identify all the different birds around you and what makes them all unique,231,0,5,3,0,1,1,0,0,,,,,1,0,,1
+Tree and Plant Identifying,Nature,Ever wonder if that plant is edible or poisonous? Well learning about all the different trees and plants around not just a great way to get out into nature but is also a great skill to help keep yourself and other safe while hiking! Some plants have valuable medicinal properties while others are highly toxic and some make delicious teas!,232,0,3,3,0,1,0,0,0,,,,,1,0,,1
 Rock Hunting,Nature,description,233,0,2,3,0,1,0,0,0,,,,,1,0,,1
 Rock Tumbling,Nature,description,234,0,2,1,0,1,3,1,0,,,,,1,0,,-1
 Fishing,Nature,description,235,0,5,3,1,2,3,,0,,,,,1,0,,1
@@ -241,12 +241,12 @@ Kyaking,Nature,description,238,0,5,3,1,3,3,1,0,,,,,1,0,,1
 Canoeing,Nature,description,239,0,5,3,1,1,3,1,0,,,,,1,0,,1
 Rafting,Nature,description,240,1,3,3,1,3,3,1,0,,,,,1,0,,1
 White Water Rafting,Nature,description,241,1,1,3,1,3,3,1,1,,,,,2,2,,1
-Scuba Diving,Nature,description,242,0,5,3,1,3,3,3,1,,,,,1,1,,1
+Scuba Diving,Nature,Explore the world right under us! Scuba Diving allows you to swim and breathe underwater to explore and learn about all sorts of aquatic life thats all around us! Fresh water or salt water all have great things to see and admire.,242,0,5,3,1,3,3,3,1,,,,,1,1,,1
 Rock Climbing,Nature,description,243,1,4,1,1,3,3,3,1,,,,,1,0,,1
 Bouldering,Nature,description,244,1,5,1,1,3,1,3,1,,,,,1,0,,1
-Plein Air Painting,Nature,description,245,0,3,3,0,3,3,4,0,,,,,1,0,,0
-Gardening,Nature,description,246,0,5,3,0,3,3,3,0,,,,,1,0,,1
-Astronomy,Nature,description,247,0,3,3,0,3,1,0,0,,,,,1,0,,0
+Plein Air Painting,Nature,Go out into nature and paint what you see! It helps to paint with a reference and it also helps you slow down and really look at the details of the things around you. Many Plein Air painters describe it as peaceful and metatative. Plus you get a beautiful painting out of it that you made!,245,0,3,3,0,3,3,4,0,,,,,1,0,,0
+Gardening,Nature,Whether its for beauty or for function or even both! Gardening is a great way to relax and spend time outside even if its just right outside your door. You can grow vegetables to make with dinner or grow beautiful flowers for the bees! No matter how you garden it will ofer you some time in your life to get your hands a little dirty and create something from nothing.,246,0,5,3,0,3,3,3,0,,,,,1,0,,1
+Astronomy,Nature,Learn about our place in the universe! The other planets in our solar system all have their own unique story and appearance. Astronomy is a great way to learn about them as well as the other solar systems in our galaxy and the other galaxies in our universe and all the asteroids and rouge planets out there! And not just learn about them but also observe them with your own eyes!,247,0,3,3,0,3,1,0,0,,,,,1,0,,0
 Bonsai,Nature,description,248,0,2,1,0,3,3,1,0,,,,,1,0,,-1
 Pooktre,Nature,description,249,0,2,1,0,1,3,1,0,,,,,1,1,,1
 Aquascaping,Nature,description,250,0,2,1,0,1,3,,0,,,,,1,1,,-1
@@ -317,7 +317,7 @@ Sports Cards,Collecting,description,314,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Playing Cards,Collecting,description,315,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Precious Metals,Collecting,description,316,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Books,Collecting,description,317,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
-Art,Collecting,description,318,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Art,Collecting,Collecting art from your favorite artists or time period or style is a great way to connect with yourself and decorate your home to make it feel truly yours! Thrift stores and antique stores and even loacal art shows are all great ways to find cheap art that you might enjoy! Cheap does not mean bad! If you like it and it makes you feel a connection to the piece or yourself then that is what matters! There are many online resources to help you get started finding art and what to look for if you want to get serious about it.,318,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Pens,Collecting,description,319,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Buttons,Collecting,description,320,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Flags,Collecting,description,321,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
@@ -361,9 +361,9 @@ Album Art,Collecting,description,358,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Political Memorbillia,Collecting,description,359,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
 Lunch Boxes,Collecting,description,360,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
 Ceramics,Collecting,description,361,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
-Historical Items,Collecting,description,362,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
-X Company Memorbillia,Collecting,description,363,0,2,0,0,0,1,-1,2,-1,-1,-1,-1,0,0,,-1
-Animation Cels,Collecting,description,364,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Historical Items,Collecting,There is just something about holding a coin or a sword or sitting at a desk that was made hundreds of years ago. It feels like a direct connection to the past. Maybe its even something that belonged to an important figure in history. Like a silver spoon made by Paul Revere or a pen used by a president to sign a bill into law. These tangable objects are interesting to look at and are a great way to learn about our past. They also make great conversation starters!,362,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+X Company Memorbillia,Collecting,Did a certiain company start in your home town and you want to show pride in that? Or maybe you just really like their logo or products. Whatever your reason maybe collecting memorbillia and products from a certain company or even genre of company is fairly common and a fun way to have a well organized collection with clear borders of being this one thing.,363,0,2,0,0,0,1,-1,2,-1,-1,-1,-1,0,0,,-1
+Animation Cells,Collecting,This is a great way to connect with movies or shows you have enjoyed. Its also a great look into how these things are made and the level of care and talent it takes to make things we might take for granted.,364,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Ashtrays,Collecting,description,365,0,2,0,0,0,1,-1,2,-1,-1,-1,-1,0,0,,-1
 Sports Balls,Collecting,description,366,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Concert Tickets,Collecting,description,367,0,2,0,0,0,2,-1,2,-1,-1,-1,-1,0,0,,-1
@@ -372,7 +372,7 @@ Foreign Currency,Collecting,description,369,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Coins,Collecting,description,370,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Fossils,Collecting,description,371,0,2,1,0,1,1,-1,2,-1,-1,-1,-1,1,0,,-1
 Key Chains,Collecting,description,372,0,2,0,0,0,1,-1,2,-1,-1,-1,-1,0,0,,-1
-Comic Books,Collecting,description,373,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Comic Books,Collecting,Superheros have made a resurgance in popular culture and its interesting to see the creation of these characters and how their stories began. Not only that but they are great stories presented in an easily digestable way.,373,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Models,Collecting,description,374,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
 Movies,Collecting,description,375,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
 Patches,Collecting,description,376,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
@@ -380,7 +380,7 @@ Military Memorbillia,Collecting,description,377,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0
 Vintage Electronics,Collecting,description,378,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
 Stickers,Collecting,description,379,0,2,0,0,0,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Vintage Clothing,Collecting,description,380,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
-Video Games,Collecting,description,381,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
+Video Games,Collecting,Collecting different consoles and games is great way to connect with the past. Video games have become a huge part of society and looking back at where it began and how they evolved and grew is a fun and interactive way to learn about them and even connect with people,381,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Trading Cards,Collecting,description,382,0,2,0,0,1,2,-1,2,-1,-1,-1,-1,0,0,,-1
 Vintage Signs,Collecting,description,383,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
 X Themed/Industry Items,Collecting,description,384,0,2,0,0,1,1,-1,2,-1,-1,-1,-1,0,0,,-1
