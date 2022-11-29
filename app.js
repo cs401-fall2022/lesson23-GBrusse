@@ -1,7 +1,3 @@
-/*
-setup express server for basic routes
-then worry about grabbing data from db
-*/
 // Imports
 const fs = require("fs");
 const path = require("path");
@@ -9,12 +5,29 @@ const http = require("http");
 const Mustache = require('mustache');
 const express = require("express");
 const sqlite3 = require('sqlite3').verbose();
+var crypto = require("crypto");
+
 
 const app = express();
 
 // Environment variables
 const hostname = "127.0.0.1";
 const port = 8000;
+
+let SESSIONS = {};
+
+function create_session(user_id) {
+  // randomly generate a session_id
+  let session_id = crypto.randomBytes(20).toString('hex');
+
+  SESSIONS[session_id] = user_id;
+
+  return session_id;
+}
+
+function destroy_session(session_id) {
+  delete SESSIONS[session_id];
+}
 
 let db = new sqlite3.Database('data.sqlite', (err) => {  //Remember to eventually close the database with db.close();
   if (err) {
@@ -57,33 +70,6 @@ let data = {
 
 app.use(express.static("static"));
 app.use(express.urlencoded());
-
-/*
-SELECT hobby_name FROM hobby
-LIMIT 1;                            <- Selects just one hobby_name from hobby
-
-SELECT hobby_name FROM hobby
-WHERE int_social_non_social = 0;    <- that selects all non social hobbies
-
-SELECT hobby_name FROM hobby
-WHERE int_social_non_social = 1
-AND int_indoor_outdoor = 3;         <- selects all social hobbies that are ALSO outdoor hobbies
-})
-
-SELECT hobby_name FROM hobby
-WHERE int_social_non_social = 0
-OR int_indoor_outdoor = 3;          <- selects all hobbies that are non-social OR are outdoor (all non-social hobbies plus all outdoor social hobbies)
-
-
-app.post('http://localhost:8000/api/', (req, res) => {
-  const accepted = req.body.accepted
-  //mark hobby as liked or disliked
-  db.all(`SELECT hobby_name FROM hobby LIMIT 1`, [], (err, rows) => {
-    //refresh the page and display new hobby information
-    res.json(index_template);
-  });
-})
-*/
 
 app.get("/", (req, res) => {
   let data = {};
@@ -160,6 +146,12 @@ app.get("/search", function (req, res) {
 });
 
 app.get("/login", function (req, res) {
+  // Check if form was submitted
+    // Attempt to load userinfo from database ("hey, does this username exist")
+      // For the sake of testing, always authenticate
+      // Set a cookie 
+
+  // If no data was submitted, just render default page
   let data = {};
   data.navbar_html = navbar_html;
   data.footer_html = footer_html;
