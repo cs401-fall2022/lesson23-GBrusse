@@ -51,4 +51,5 @@ while True:
     conn.commit()
 
 conn.execute("CREATE TABLE users (uid INT NOT NULL PRIMARY KEY, uname TEXT NOT NULL, passwd TEXT, likes TEXT, dislikes TEXT);")
-conn.execute("INSERT INTO users (uid, uname, passwd, likes, dislikes) VALUES (0, admin, NULL, NULL, NULL);")
+conn.execute("INSERT INTO users (uid, uname, passwd, likes, dislikes) VALUES (0, 'admin', 'test', NULL, NULL);")
+conn.commit()
