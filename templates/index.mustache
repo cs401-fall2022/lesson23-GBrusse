@@ -13,11 +13,11 @@
 
       <div class="content-container">
         <div class="button-container">
-          <div class="reject">
+          <div class="dislike">
             <form action="http://localhost:8000" method="POST">
               <input type="hidden" name="action" value="dislike">
               <input type="hidden" name="hobby_id" value="{{current_hobby}}">
-              <input class="accept-regect-btn" type="submit" value="Dislike">
+              <input class="like-dislike-btn" type="submit" value="Dislike">
             </form>
           </div>
         </div>
@@ -29,11 +29,11 @@
           <p class="description">{{description}}</p>
         </div>
         <div class="button-container">
-          <div class="accept">
+          <div class="like">
             <form action="http://localhost:8000" method="POST">
               <input type="hidden" name="action" value="like">
               <input type="hidden" name="hobby_id" value="{{current_hobby}}">
-              <input class="accept-regect-btn" type="submit" value="  Like  ">
+              <input class="like-dislike-btn" type="submit" value="  Like  ">
             </form>
           </div>
         </div>
