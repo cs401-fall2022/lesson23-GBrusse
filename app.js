@@ -145,12 +145,43 @@ app.post("/", (req, res) => {
   let template_data = common_page_data(req, 2);
 
   let action = req.body.action;
-  let hobby_name = req.body.hobby_name;
+  let hobby_id = req.body.hobby_id;
 
-  if (action == "like") {
-    //flag hobby as liked
-  } else {
-    //flag hobby as disliked
+  if (is_logged_in(req) && Number.isInteger(hobby_id)) {
+    if (action == "like") { // flag hobby as liked
+
+      // SQL: Get the likes field from the currently logged in user
+      let stmt = db.prepare("SELECT liked FROM users WHERE uid = ?");
+      stmt.get(SESSIONS[req.cookies.session], (err, row) => {
+        if (row.liked != null) {
+          row.liked += ","
+        }
+        row.liked += hobby_id.toString();
+        let insertStmt = db.prepare("UPDATE users SET liked = ? WHERE uid = ?");
+        insertStmt.run(row.liked, SESSIONS[req.cookies.session], (err) => {
+          // handle error, if any
+        });
+        //add hobby to likes column in users table in data.sqlite
+        let updateStmt = db.prepare("UPDATE users SET likes = likes + 1 WHERE uid = ?");
+      });
+      stmt.finalize();
+         
+    } else { // flag hobby as disliked
+      
+      let stmt = db.prepare("SELECT dislikes FROM users WHERE uid = ?");
+      stmt.get(SESSIONS[req.cookies.session], (err, row) => {
+        if (row.dislikes != null) {
+          row.dislikes += ","
+        }
+        row.dislikes += hobby_id.toString();
+        let insertStmt = db.prepare("UPDATE users SET dislikes = ? WHERE uid = ?");
+        insertStmt.run(row.dislikes, SESSIONS[req.cookies.session], (err) => {
+          // handle error, if any
+        });
+        //add hobby to dislikes column in users table in data.sqlite
+        let updateStmt = db.prepare("UPDATE users SET dislikes = dislikes + 1 WHERE uid = ?");
+      });
+    }
   }
   
   db.all('SELECT DISTINCT hobby_name, primary_category, description FROM hobby ORDER BY Random() LIMIT 1', [], (err, rows) => {

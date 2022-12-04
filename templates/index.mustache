@@ -16,7 +16,7 @@
           <div class="dislike">
             <form action="http://localhost:8000" method="POST">
               <input type="hidden" name="action" value="dislike">
-              <input type="hidden" name="hobby_id" value="{{current_hobby}}">
+              <input type="hidden" name="hobby_id" value="{{hobby_id}}">
               <input class="like-dislike-btn" type="submit" value="Dislike">
             </form>
           </div>
@@ -32,7 +32,7 @@
           <div class="like">
             <form action="http://localhost:8000" method="POST">
               <input type="hidden" name="action" value="like">
-              <input type="hidden" name="hobby_id" value="{{current_hobby}}">
+              <input type="hidden" name="hobby_id" value="{{hobby_id}}">
               <input class="like-dislike-btn" type="submit" value="  Like  ">
             </form>
           </div>
