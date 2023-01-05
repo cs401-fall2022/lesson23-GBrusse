@@ -58,6 +58,59 @@ db.all('SELECT DISTINCT hobby_name FROM hobby', [], (err, rows) => {
 });
 */
 
+// ---------- Signup Types ----------
+const SignupError = {
+  None: Symbol("none"),
+  Email: Symbol("email"),
+  Username: Symbol("username"),
+  Password: Symbol("password"),
+  Agree: Symbol("agree"),
+  Server: Symbol("server")
+}
+
+function get_signup_error_msg(err) {
+  switch (err) {
+    case SignupError.Email:
+      return "Invalid email.";
+    case SignupError.Username:
+      return "Please choose a different username.";
+    case SignupError.Password:
+      return "Invalid password.";
+    case SignupError.Agree:
+      return "You must agree to the Terms of Service.";
+    case SignupError.Server:
+      return "Server error. Please try again.";
+    default:
+      return "";
+  }
+}
+
+function validate(form_data) {
+  // TODO
+  // if email doesn't match "^.+@.+$"
+  if (!/^.+@.+$/.test(form_data.email)) {
+    return SignupError.Email;
+  }
+
+  // if username is not between 3 and 20 characters, or doesn't match "^[a-zA-Z0-9.]*$"
+  if (!/^[A-Za-z0-9]{1,20}$/.test(form_data.username)) {
+    return SignupError.Username;
+  }
+
+  // if password is not between 12 and 64 characters
+  {
+    return SignupError.Password;
+  }
+
+  // if agree != "on"
+  {
+    return SignupError.Agree;
+  }
+  
+  // NOTE: always run
+  return SignupError.None;
+}
+
 // ---------- Load Templates ----------
 const index_template = fs.readFileSync(path.join(__dirname, "templates/index.mustache"), 'utf8') + "";  //empty string concatenated forces conversion to string. Template is now a string and songs are sung
 const profile_template = fs.readFileSync(path.join(__dirname, "templates/profile.mustache"), 'utf8') + "";
@@ -71,6 +124,7 @@ const suggest_template = fs.readFileSync(path.join(__dirname, "templates/suggest
 const report_template = fs.readFileSync(path.join(__dirname, "templates/report.mustache"), 'utf8') + "";
 
 // html file
+const signup_html = fs.readFileSync(path.join(__dirname, "templates/signup.mustache"), 'utf8') + "";
 const footer_html = fs.readFileSync(path.join(__dirname, "templates/footer.mustache"), 'utf8') + "";
 const login_error_html = fs.readFileSync(path.join(__dirname, "templates/login_error.mustache"), 'utf8') + "";
 
@@ -229,8 +283,7 @@ app.get("/login", function (req, res) {
   // If already logged in...
   // NOTE: logging out from a plain link is a bad idea
   if (is_logged_in(req)) {
-    // destroy session and redirect to referer
-    destroy_session(req.cookies.session);
+    // redirect to referer
     let ref = req.get('Referrer');
     res.redirect(303, ref);
   } else {
@@ -245,8 +298,8 @@ app.post("/login", (req, res) => {
   stmt.get(req.body.uname, (err, row) => {
     if (row !== undefined && req.body.passwd == row.passwd) {  // TODO: not secure. demo only.
       let session_id = create_session(row.uid);
-      res.cookie("session", session_id);
-      res.redirect(303, "/"); 
+      res.cookie("SID", session_id);
+      res.redirect(303, "/");
     } else {
       let template_data = common_page_data(req, 6);
       template_data.login_error = login_error_html;
@@ -255,6 +308,40 @@ app.post("/login", (req, res) => {
     }
   });
   stmt.finalize();
+});
+
+app.get("/signup", (req, res) => {
+  // If already logged in...
+  // NOTE: logging out from a plain link is a bad idea
+  if (is_logged_in(req)) {
+    // redirect to referer
+    let ref = req.get('Referrer');
+    res.redirect(303, ref);
+  } else {
+    res.send(signup_html);
+  }
+});
+
+app.post("/signup", (req, res) => {
+  let validation = validate(req.body);
+
+  if (validation == SignupError.None) {
+    // Success!
+    // TODO: Hash password, attempt to insert user data into database, and send email confirmation
+    // If any of those things fail, set "validation" to an error state
+
+  } else {
+    console.log("Registration form failed validation."); // line 202 in rust example
+  }
+
+  if (validation == SignupError.None) {
+    // TODO: render page that tells user to check email
+
+  } else {
+    let err_msg = get_signup_error_msg(validation);
+    // TODO: render error page with err_msg
+
+  }
 });
 
 app.get("/policies", function (req, res) {
